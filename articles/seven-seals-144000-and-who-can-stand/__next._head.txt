@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[90484,[],"ViewportBoundary"]
+3:I[90484,[],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"The Seven Seals, the 144,000, and the Question: Who Can Stand? | Revelation Study"}],["$","meta","1",{"name":"description","content":"The seals trace history under the Lamb's authority and lead to Revelation 7, where God's sealed servants answer the great question of who can stand."}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"rKX5yrxYyH2W443PiLMAf"}

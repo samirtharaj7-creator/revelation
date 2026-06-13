@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[90484,[],"ViewportBoundary"]
+3:I[90484,[],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Revelation 6: The First Six Seals | Revelation Study"}],["$","meta","1",{"name":"description","content":"Revelation 6 shows the Lamb opening the first six seals. The chapter traces gospel advance, persecution, compromise, spiritual famine, martyr witness, prophetic warning signs, and the final question of who can stand before the Lamb."}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"rKX5yrxYyH2W443PiLMAf"}
