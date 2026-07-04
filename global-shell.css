@@ -196,11 +196,13 @@
 .mbe-library-desc{color:var(--mbe-muted);font-size:.78rem;font-weight:500;line-height:1.35;}
 
 .mbe-global-footer{
+  order:999;
   background:linear-gradient(180deg,#fffdf8 0%,var(--mbe-ivory) 100%);
   color:var(--mbe-muted);
   font-family:var(--mbe-font-ui);
   border-top:1px solid var(--mbe-rule);
   box-shadow:0 -14px 32px -30px rgba(11,31,58,.42);
+  padding:0;
 }
 
 .mbe-global-footer .mbe-shell-wrap{
@@ -213,9 +215,9 @@
   flex-wrap:wrap;
   align-items:center;
   justify-content:space-between;
-  gap:14px clamp(20px,3vw,38px);
-  padding:34px clamp(24px,3vw,48px);
-  font-size:clamp(.98rem,1.15vw,1.08rem);
+  gap:10px clamp(18px,3vw,34px);
+  padding:24px clamp(20px,3vw,42px);
+  font-size:clamp(.86rem,.95vw,.98rem);
   line-height:1.4;
 }
 
@@ -223,12 +225,14 @@
   display:inline-flex;
   align-items:center;
   flex:0 0 auto;
+  color:inherit;
   text-decoration:none;
+  border-bottom:0;
 }
 
 .mbe-footer-logo{
   display:block;
-  width:clamp(210px,22vw,300px);
+  width:clamp(168px,16vw,240px);
   max-width:100%;
   height:auto;
 }
@@ -236,6 +240,7 @@
 .mbe-footer-wrap > span:last-child{
   flex-basis:100%;
   color:var(--mbe-muted);
+  font-size:clamp(.78rem,.85vw,.9rem);
 }
 
 .mbe-footer-link{
@@ -249,6 +254,56 @@
 .mbe-footer-link:hover{
   color:var(--mbe-navy);
   border-bottom-color:var(--mbe-navy);
+}
+
+html{
+  scroll-padding-top:64px;
+}
+
+body:has(> .mbe-global-footer){
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+body:has(> .mbe-global-footer) > main,
+body:has(> .mbe-global-footer) > #root,
+body:has(> .mbe-global-footer) > .page,
+body:has(> .mbe-global-footer) > .app-shell,
+body:has(> .mbe-global-footer) > .atlas-page{
+  flex:1 0 auto;
+  min-width:0;
+}
+
+body:has(> .mbe-global-footer) > .mbe-global-footer{
+  margin-top:auto;
+  flex:0 0 auto;
+}
+
+body > #root:empty{
+  min-height:calc(100vh - 260px);
+  display:grid;
+  place-items:start center;
+  padding:clamp(36px,8vh,80px) 24px;
+}
+
+body > #root:empty::before{
+  content:"";
+  display:block;
+  width:min(680px,100%);
+  height:220px;
+  border:1px solid var(--mbe-rule);
+  border-radius:10px;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.22),rgba(255,255,255,.72),rgba(255,255,255,.22)) 0 0/220% 100%,
+    linear-gradient(180deg,#fffdf8 0%,var(--mbe-ivory) 100%);
+  box-shadow:0 18px 42px -34px rgba(11,31,58,.42);
+  animation:mbe-shell-loading 1.45s ease-in-out infinite;
+}
+
+@keyframes mbe-shell-loading{
+  0%{background-position:0 0,0 0;}
+  100%{background-position:220% 0,0 0;}
 }
 
 @media(max-width:720px){
@@ -279,7 +334,58 @@
     min-height:auto;
     flex-direction:column;
     align-items:flex-start;
-    gap:16px;
-    padding:44px 24px;
+    gap:12px;
+    padding:28px 20px;
   }
 }
+
+/* Keep Revelation's 22-chapter selector on a single line. */
+.reader-page .chapter-strip{
+  overflow-x:auto;
+}
+
+.reader-page .chapter-strip-inner{
+  min-height:auto;
+  gap:clamp(12px,1.5vw,20px);
+  padding:8px clamp(12px,1.6vw,22px);
+}
+
+.reader-page .chapter-strip-label{
+  flex:0 0 auto;
+  font-size:clamp(.68rem,.85vw,.78rem);
+  gap:.45rem;
+}
+
+.reader-page .chapter-strip-links{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(4px,.42vw,8px);
+  width:auto;
+  max-width:none;
+  padding:0;
+}
+
+.reader-page .chapter-strip-row{
+  display:flex;
+  flex:0 0 auto;
+  align-items:center;
+  gap:clamp(4px,.42vw,8px);
+}
+
+.reader-page .chapter-strip-link{
+  width:clamp(26px,2.45vw,30px);
+  height:clamp(26px,2.45vw,30px);
+  min-width:clamp(26px,2.45vw,30px);
+  font-size:clamp(.72rem,.9vw,.82rem);
+  line-height:1;
+}
+
+@media(max-width:820px){
+  .reader-page .chapter-strip-inner{
+    justify-content:flex-start;
+  }
+}
+
