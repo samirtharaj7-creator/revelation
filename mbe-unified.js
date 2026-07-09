@@ -11,7 +11,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-illustrated.css?v=rvx-35';
+    const href = '/revelation-illustrated.css?v=rvx-36';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -127,6 +127,98 @@
     summaryObserver.observe(document.body, { childList: true, characterData: true, subtree: true });
   }
 
+  const INLINE_NOTE_SELECTOR = '[data-revelation-inline-note]';
+  let inlineNotesBound = false;
+
+  function isInlineNotesViewport() {
+    return window.matchMedia('(max-width: 1023.98px)').matches;
+  }
+
+  function removeInlineNotes() {
+    document.querySelectorAll(INLINE_NOTE_SELECTOR).forEach((node) => node.remove());
+  }
+
+  function verseFromButton(button) {
+    if (!button || !button.id) return null;
+    const match = button.id.match(/^revelation-(\d+)-(\d+)$/);
+    if (!match) return null;
+    return {
+      chapter: match[1],
+      verse: match[2],
+      token: `revelation-${match[1]}-${match[2]}`,
+      label: `Revelation ${match[1]}:${match[2]}`
+    };
+  }
+
+  function sanitizeInlineNoteIds(root, token) {
+    root.id = `inline-note-${token}`;
+    root.querySelectorAll('[id]').forEach((node, index) => {
+      const current = node.id || 'node';
+      node.id = `${current}-inline-${token}-${index + 1}`;
+    });
+    root.querySelectorAll('label[for]').forEach((label) => {
+      label.removeAttribute('for');
+    });
+    root.querySelectorAll('[aria-controls], [aria-labelledby], [aria-describedby]').forEach((node) => {
+      node.removeAttribute('aria-controls');
+      node.removeAttribute('aria-labelledby');
+      node.removeAttribute('aria-describedby');
+    });
+  }
+
+  function matchingActiveNote(label) {
+    const card = document.querySelector('aside.commentary-pane article.exposition-card');
+    const heading = card?.querySelector('.exposition-card-heading h2');
+    if (!card || !heading || heading.textContent.trim() !== label) return null;
+    return card;
+  }
+
+  function cloneActiveNote(info) {
+    const source = matchingActiveNote(info.label);
+    if (!source) return false;
+    const clone = source.cloneNode(true);
+    clone.classList.add('revelation-inline-note');
+    clone.setAttribute('data-revelation-inline-note', '');
+    clone.setAttribute('aria-label', `${info.label} study note`);
+    clone.querySelectorAll('.commentary-actions, .no-print').forEach((node) => node.remove());
+    sanitizeInlineNoteIds(clone, info.token);
+
+    const button = document.getElementById(info.token);
+    if (!button || !button.parentElement) return false;
+    removeInlineNotes();
+    button.insertAdjacentElement('afterend', clone);
+    return true;
+  }
+
+  function openInlineNoteFor(button) {
+    if (!isInlineNotesViewport()) {
+      removeInlineNotes();
+      return;
+    }
+    const info = verseFromButton(button);
+    if (!info) return;
+    let attempts = 0;
+    const tryClone = () => {
+      attempts += 1;
+      if (cloneActiveNote(info) || attempts >= 12) return;
+      window.setTimeout(tryClone, 50);
+    };
+    window.requestAnimationFrame(tryClone);
+  }
+
+  function ensureInlineCommentaryNotes() {
+    if (inlineNotesBound || !document.body) return;
+    inlineNotesBound = true;
+    document.addEventListener('click', (event) => {
+      const button = event.target.closest?.('.scripture-card[id^="revelation-"]');
+      if (!button) return;
+      openInlineNoteFor(button);
+    });
+    window.matchMedia('(max-width: 1023.98px)').addEventListener('change', (event) => {
+      if (!event.matches) removeInlineNotes();
+    });
+  }
+
   let darkThemeObserver = null;
 
   function ensureDarkTheme() {
@@ -160,6 +252,7 @@
     ensureChapterSummary();
     ensureChapterSummaryObserver();
     ensureDarkThemeObserver();
+    ensureInlineCommentaryNotes();
     document.body.classList.add('mbe-shell-managed');
     document.querySelectorAll('.mbe-global-shell').forEach((node, index) => {
       if (index > 0 || node.getAttribute('data-tool') !== tool || !node.hasAttribute('data-embedded')) node.remove();

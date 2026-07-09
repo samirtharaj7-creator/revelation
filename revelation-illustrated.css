@@ -924,6 +924,48 @@ html.dark .bg-background {
   background: rgba(201, 164, 76, .10) !important;
 }
 
+.revelation-inline-note {
+  display: none !important;
+}
+
+@media (max-width: 1023.98px) {
+  .revelation-inline-note {
+    display: block !important;
+    width: 100% !important;
+    margin: .9rem 0 1.35rem !important;
+    padding: 1rem !important;
+    border: 1px solid rgba(201, 164, 76, .28) !important;
+    border-left: 3px solid #c9a44c !important;
+    border-radius: .45rem !important;
+    background:
+      linear-gradient(180deg, rgba(19, 45, 74, .96), rgba(11, 31, 58, .98)) !important;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, .22) !important;
+  }
+
+  .revelation-inline-note .exposition-card-heading {
+    margin-bottom: .85rem !important;
+  }
+
+  .revelation-inline-note .commentary-reading,
+  .revelation-inline-note .commentary-reading p {
+    color: #e8ddc3 !important;
+    font-size: 1.02rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .revelation-inline-note .commentary-reading p + p {
+    margin-top: 1rem !important;
+  }
+
+  .revelation-inline-note .verse-study-card {
+    margin-top: 1rem !important;
+  }
+
+  .revelation-inline-note .verse-study-grid {
+    gap: .9rem !important;
+  }
+}
+
 .verse-number {
   display: inline !important;
   margin-right: .5rem !important;
