@@ -116,15 +116,14 @@ textarea {
 h1,
 h2 {
   font-family: var(--mbe-font-display) !important;
-  letter-spacing: .015em !important;
+  letter-spacing: 0 !important;
   line-height: 1.12;
 }
 
 h3,
 h4,
-.home-showcase-context p:first-of-type,
 .passage-outline-title {
-  font-family: var(--mbe-font-reading) !important;
+  font-family: var(--mbe-font-display) !important;
 }
 
 .reader-header {
@@ -319,7 +318,7 @@ html.dark .home-showcase {
   font-family: var(--mbe-font-display) !important;
   font-size: 6.8rem !important;
   font-weight: 600 !important;
-  letter-spacing: .01em !important;
+  letter-spacing: 0 !important;
   line-height: .9 !important;
   text-transform: uppercase !important;
   text-shadow: 0 18px 42px rgba(0, 0, 0, .32);
@@ -347,7 +346,7 @@ html.dark .home-showcase {
 .home-showcase-context p:first-of-type {
   color: #f3e8cc !important;
   font-family: var(--mbe-font-reading) !important;
-  font-size: 2.05rem !important;
+  font-size: 1.875rem !important;
   font-weight: 600 !important;
   line-height: 1.55 !important;
 }
@@ -363,7 +362,7 @@ html.dark .home-showcase {
   gap: 1.1rem !important;
   color: #d8b866 !important;
   font-family: var(--mbe-font-ui) !important;
-  font-size: .84rem !important;
+  font-size: .82rem !important;
   font-weight: 600 !important;
   letter-spacing: .32em !important;
   text-transform: uppercase !important;
@@ -491,9 +490,9 @@ html.dark .background-page {
   margin-top: 1.25rem !important;
   color: #f3e8cc !important;
   font-family: var(--mbe-font-display) !important;
-  font-size: clamp(3.4rem, 7vw, 6.8rem) !important;
+  font-size: 6.8rem !important;
   font-weight: 600 !important;
-  letter-spacing: .01em !important;
+  letter-spacing: 0 !important;
   line-height: .93 !important;
   text-transform: uppercase !important;
   text-shadow: 0 18px 42px rgba(0, 0, 0, .34);
@@ -504,7 +503,7 @@ html.dark .background-page {
   margin-top: 1.6rem !important;
   color: #cbbf9e !important;
   font-family: var(--mbe-font-reading) !important;
-  font-size: clamp(1.12rem, 2vw, 1.55rem) !important;
+  font-size: 1.25rem !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
 }
@@ -609,12 +608,12 @@ html.dark .background-page {
 }
 
 .background-fact-card h2 {
-  font-size: 1.2rem !important;
+  font-size: 1.25rem !important;
 }
 
 .background-section-body h2,
 .background-related h2 {
-  font-size: clamp(2rem, 3vw, 3rem) !important;
+  font-size: 2.25rem !important;
 }
 
 .background-section-number {
@@ -641,7 +640,7 @@ html.dark .background-page {
 .background-related-grid a strong {
   color: #f3e8cc !important;
   font-family: var(--mbe-font-reading) !important;
-  font-size: 1.35rem !important;
+  font-size: 1.32rem !important;
   font-weight: 600 !important;
 }
 
@@ -744,10 +743,14 @@ html.dark .bg-background {
   color: #e0c37e !important;
   font-family: var(--mbe-font-ui) !important;
   font-size: .75rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   letter-spacing: .16em !important;
   line-height: 1rem !important;
   text-transform: uppercase !important;
+}
+
+.commentary-pane .reader-pane-kicker {
+  font-family: var(--mbe-font-display) !important;
 }
 
 .reader-pane-toolbar p {
@@ -804,10 +807,11 @@ html.dark .bg-background {
 .scripture-pane-header h1 {
   color: #f3e8cc !important;
   font-family: var(--mbe-font-display) !important;
-  font-size: 1.55rem !important;
+  font-size: 1.32rem !important;
   font-weight: 600 !important;
-  letter-spacing: -.025em !important;
-  line-height: 1.9rem !important;
+  letter-spacing: 0 !important;
+  line-height: 1.65rem !important;
+  white-space: nowrap !important;
 }
 
 .scripture-chapter-summary {
@@ -877,7 +881,7 @@ html.dark .bg-background {
   color: #d8b866 !important;
   font-family: var(--mbe-font-ui) !important;
   font-size: .72rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   letter-spacing: .16em !important;
   line-height: 1.35 !important;
   text-transform: uppercase !important;
@@ -891,8 +895,8 @@ html.dark .bg-background {
   color: #f3e8cc !important;
   font-family: var(--mbe-font-display) !important;
   font-size: 1rem !important;
-  font-weight: 700 !important;
-  letter-spacing: .02em !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
   line-height: 1.35 !important;
 }
 
@@ -949,7 +953,7 @@ html.dark .bg-background {
   .revelation-inline-note .commentary-reading,
   .revelation-inline-note .commentary-reading p {
     color: #e8ddc3 !important;
-    font-size: 1.02rem !important;
+    font-size: 1rem !important;
     line-height: 1.7 !important;
   }
 
@@ -973,7 +977,7 @@ html.dark .bg-background {
   color: #d8b866 !important;
   font-family: var(--mbe-font-ui) !important;
   font-size: .75rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   letter-spacing: 0 !important;
   line-height: 1rem !important;
   vertical-align: super !important;
@@ -1009,7 +1013,7 @@ html.dark .bg-background {
 
 .exposition-card-heading h2 {
   color: #f3e8cc !important;
-  font-family: var(--mbe-font-ui) !important;
+  font-family: var(--mbe-font-display) !important;
   font-size: .875rem !important;
   font-weight: 600 !important;
   letter-spacing: 0 !important;
@@ -1034,8 +1038,8 @@ html.dark .bg-background {
 .study-card-empty,
 .symbol-note p,
 .word-note p {
-  font-family: var(--mbe-font-reading) !important;
-  font-size: 1.1rem !important;
+  font-family: var(--mbe-font-ui) !important;
+  font-size: 1.08rem !important;
   line-height: 1.55 !important;
 }
 
@@ -1051,8 +1055,15 @@ html.dark .bg-background {
   }
 
   .scripture-pane-header h1 {
-    font-size: 1.75rem !important;
-    line-height: 2.1rem !important;
+    font-size: 1.32rem !important;
+    line-height: 1.65rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .scripture-pane-header h1 {
+    font-size: 1.125rem !important;
+    line-height: 1.5rem !important;
   }
 }
 
@@ -1276,7 +1287,7 @@ body > #root:empty::before {
   }
 
   .home-showcase-copy h1 {
-    font-size: 4.35rem !important;
+    font-size: 4.5rem !important;
   }
 
   .home-showcase-context {
@@ -1289,7 +1300,7 @@ body > #root:empty::before {
   }
 
   .home-showcase-context p + p {
-    font-size: 1.05rem !important;
+    font-size: 1.08rem !important;
   }
 
   .background-hero {
@@ -1304,12 +1315,12 @@ body > #root:empty::before {
 
   .background-hero h1 {
     max-width: 10.5ch !important;
-    font-size: 4.1rem !important;
+    font-size: 4.5rem !important;
   }
 
   .background-subtitle {
     max-width: 34rem !important;
-    font-size: 1.12rem !important;
+    font-size: 1.125rem !important;
   }
 
   .background-section,
@@ -1343,7 +1354,7 @@ body > #root:empty::before {
 
   .home-showcase-description {
     max-width: 36rem !important;
-    font-size: 1.35rem !important;
+    font-size: 1.32rem !important;
   }
 
   .home-showcase-context {
@@ -1351,7 +1362,7 @@ body > #root:empty::before {
   }
 
   .home-showcase-context p:first-of-type {
-    font-size: 1.55rem !important;
+    font-size: 1.5rem !important;
   }
 
   .home-showcase-context p + p {
@@ -1368,7 +1379,7 @@ body > #root:empty::before {
   }
 
   .background-subtitle {
-    font-size: 1.28rem !important;
+    font-size: 1.25rem !important;
   }
 }
 
@@ -1383,12 +1394,12 @@ body > #root:empty::before {
   }
 
   .home-showcase-copy h1 {
-    font-size: 2.85rem !important;
+    font-size: 3rem !important;
     max-width: 10.1ch !important;
   }
 
   .home-showcase-description {
-    font-size: 1.05rem !important;
+    font-size: 1.08rem !important;
   }
 
   .home-showcase-actions {
@@ -1421,7 +1432,7 @@ body > #root:empty::before {
 
   .background-hero h1 {
     max-width: 9.5ch !important;
-    font-size: 2.85rem !important;
+    font-size: 3rem !important;
   }
 
   .background-subtitle {
@@ -1430,6 +1441,92 @@ body > #root:empty::before {
   }
 
   .background-related-grid a strong {
-    font-size: 1.18rem !important;
+    font-size: 1.25rem !important;
   }
+}
+
+/*
+ * Static export paint guard.
+ * The generated HTML contains the full page markup before React hydrates, so keep
+ * the shell and primary content visibly painted even when a stale or failed client
+ * script leaves the browser in an odd intermediate state.
+ */
+html,
+body {
+  min-height: 100% !important;
+  background: #081521 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body > header,
+body > main,
+body > footer,
+.mbe-global-shell,
+.mbe-global-footer,
+.reader-header,
+.home-showcase,
+.home-showcase-shell,
+.home-showcase-hero,
+.home-showcase-copy,
+.home-action-grid,
+.home-chapter-study,
+.split-reader,
+.scripture-pane,
+.commentary-pane {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body > main {
+  display: block !important;
+  min-height: 100vh !important;
+}
+
+.reader-header {
+  display: flex !important;
+}
+
+.home-showcase,
+.home-showcase-shell {
+  display: block !important;
+}
+
+.home-showcase-copy,
+.home-showcase-copy h1,
+.home-showcase-description,
+.home-showcase-actions,
+.home-action-grid,
+.home-chapter-study {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Final CTA contrast override. */
+.home-showcase .home-showcase-actions .home-showcase-primary,
+.home-showcase .home-showcase-actions .home-showcase-primary:visited,
+.home-showcase .home-showcase-actions .home-showcase-primary:hover,
+.home-showcase .home-showcase-actions .home-showcase-primary:focus,
+.home-showcase .home-showcase-actions .home-showcase-primary:focus-visible {
+  border-color: #f3e8cc !important;
+  background: #f3e8cc !important;
+  color: #081521 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+.home-showcase .home-showcase-actions .home-showcase-primary:hover,
+.home-showcase .home-showcase-actions .home-showcase-primary:focus-visible {
+  border-color: #fff2d4 !important;
+  background: #fff2d4 !important;
+  box-shadow: 0 0 0 3px rgba(201, 164, 76, .22) !important;
+}
+
+.home-showcase .home-showcase-actions .home-showcase-primary *,
+.home-showcase .home-showcase-actions .home-showcase-primary svg,
+.home-showcase .home-showcase-actions .home-showcase-primary svg * {
+  color: #081521 !important;
+  opacity: 1 !important;
+  stroke: #081521 !important;
+  text-shadow: none !important;
 }

@@ -12,9 +12,9 @@
   --mbe-max:1080px;
   --mbe-accent:var(--mbe-gold);
   --mbe-accent-dark:var(--mbe-gold-dark);
-  --mbe-font-display:"Cormorant Garamond",Georgia,serif;
-  --mbe-font-reading:"Literata",Georgia,serif;
-  --mbe-font-ui:"Inter",system-ui,sans-serif;
+  --mbe-font-display:"Cinzel",Georgia,serif;
+  --mbe-font-reading:"EB Garamond",Georgia,serif;
+  --mbe-font-ui:"Jost",system-ui,sans-serif;
 }
 
 .mbe-global-shell *,
@@ -96,7 +96,7 @@
 .mbe-ribbon-back{
   color:var(--mbe-muted);
   font-size:.73rem;
-  font-weight:700;
+  font-weight:600;
   letter-spacing:.14em;
   line-height:1;
   text-decoration:none;
@@ -121,7 +121,7 @@
   gap:18px;
   color:var(--mbe-muted);
   font-size:.82rem;
-  font-weight:700;
+  font-weight:600;
   line-height:1;
 }
 
@@ -217,7 +217,7 @@
   justify-content:space-between;
   gap:10px clamp(18px,3vw,34px);
   padding:24px clamp(20px,3vw,42px);
-  font-size:clamp(.86rem,.95vw,.98rem);
+  font-size:.98rem;
   line-height:1.4;
 }
 
@@ -240,13 +240,13 @@
 .mbe-footer-wrap > span:last-child{
   flex-basis:100%;
   color:var(--mbe-muted);
-  font-size:clamp(.78rem,.85vw,.9rem);
+  font-size:.78rem;
 }
 
 .mbe-footer-link{
   color:var(--mbe-gold-dark);
   text-decoration:none;
-  font-weight:700;
+  font-weight:600;
   border-bottom:1px solid rgba(155,118,40,.45);
   padding-bottom:2px;
 }
@@ -352,7 +352,7 @@ body > #root:empty::before{
 
 .reader-page .chapter-strip-label{
   flex:0 0 auto;
-  font-size:clamp(.68rem,.85vw,.78rem);
+  font-size:.78rem;
   gap:.45rem;
 }
 
@@ -379,7 +379,7 @@ body > #root:empty::before{
   width:clamp(26px,2.45vw,30px);
   height:clamp(26px,2.45vw,30px);
   min-width:clamp(26px,2.45vw,30px);
-  font-size:clamp(.72rem,.9vw,.82rem);
+  font-size:.82rem;
   line-height:1;
 }
 
@@ -388,4 +388,3 @@ body > #root:empty::before{
     justify-content:flex-start;
   }
 }
-
