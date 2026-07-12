@@ -313,19 +313,31 @@ html.dark .home-showcase {
 }
 
 .home-showcase-copy h1 {
-  max-width: 10.4ch !important;
+  max-width: 11ch !important;
   color: #f3e8cc !important;
   font-family: var(--mbe-font-display) !important;
-  font-size: 6.8rem !important;
+  font-size: clamp(3rem, 9vw, 7rem) !important;
   font-weight: 600 !important;
   letter-spacing: 0 !important;
-  line-height: .9 !important;
+  line-height: .86 !important;
   text-transform: uppercase !important;
   text-shadow: 0 18px 42px rgba(0, 0, 0, .32);
 }
 
 .home-showcase-copy h1 span {
   display: block !important;
+}
+
+.home-showcase-copy h1 .home-title-kicker {
+  margin-bottom: .55rem !important;
+  color: #d8b866 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.5rem !important;
+}
+
+.home-showcase-copy h1 .home-title-main {
+  font-size: inherit !important;
+  line-height: .86 !important;
 }
 
 .home-showcase-description {
@@ -1068,9 +1080,20 @@ html.dark .bg-background {
 }
 
 @media (min-width: 1024px) {
+  html.mbe-reader-shell-active,
+  html.mbe-reader-shell-active body {
+    height: 100dvh !important;
+    overflow: hidden !important;
+  }
+
+  body.mbe-reader-shell-active .reader-header {
+    top: 46px !important;
+    z-index: 80 !important;
+  }
+
   .split-reader {
     display: flex !important;
-    height: calc(100dvh - 8rem) !important;
+    height: calc(100dvh - 12rem) !important;
     min-height: 0 !important;
   }
 
@@ -1398,6 +1421,12 @@ body > #root:empty::before {
     max-width: 10.1ch !important;
   }
 
+  .home-showcase-copy h1 .home-title-kicker {
+    margin-bottom: .45rem !important;
+    font-size: 1.125rem !important;
+    line-height: 1.125rem !important;
+  }
+
   .home-showcase-description {
     font-size: 1.08rem !important;
   }
@@ -1529,4 +1558,9 @@ body > main {
   opacity: 1 !important;
   stroke: #081521 !important;
   text-shadow: none !important;
+}
+
+/* Keep the illustrated home hero unobstructed. */
+.home-showcase .home-showcase-context {
+  display: none !important;
 }

@@ -11,7 +11,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-illustrated.css?v=rvx-41';
+    const href = '/revelation-illustrated.css?v=rvx-48';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -49,7 +49,7 @@
     const title = document.querySelector('.home-showcase-copy h1');
     if (title) {
       title.setAttribute('aria-label', 'The Book of Revelation');
-      title.innerHTML = '<span>The</span><span>Book of</span><span>Revelation</span>';
+      title.innerHTML = '<span class="home-title-kicker">The Book of</span><span class="home-title-main">Revelation</span>';
     }
     const description = document.querySelector('.home-showcase-description');
     if (description) {
@@ -267,63 +267,67 @@
     style.textContent = `
 .mbe-ref-strip {
   position: sticky !important;
-  top: calc(46px + 4rem) !important;
-  z-index: 55 !important;
+  top: calc(46px + 5.25rem) !important;
+  z-index: 70 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  min-height: 3.35rem !important;
-  border-bottom: 1px solid rgba(201, 164, 76, .18) !important;
-  background: rgba(19, 45, 63, .94) !important;
-  padding: .35rem .75rem !important;
+  min-height: 3.5rem !important;
+  border-top: 1px solid rgba(201, 164, 76, .20) !important;
+  border-bottom: 1px solid rgba(201, 164, 76, .24) !important;
+  background: rgba(26, 53, 66, .96) !important;
+  padding: .38rem .75rem !important;
   box-shadow: 0 16px 34px -34px rgba(0,0,0,.9) !important;
+  box-sizing: border-box !important;
   backdrop-filter: blur(14px) !important;
 }
 .mbe-ref-nav {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: .45rem !important;
-  width: min(100%, 72rem) !important;
+  gap: .48rem !important;
+  width: fit-content !important;
+  max-width: calc(100vw - 2rem) !important;
+  min-width: 0 !important;
   margin: 0 auto !important;
 }
 .mbe-ref-form {
   position: relative !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: .45rem !important;
-  flex: 1 1 18.5rem !important;
-  width: min(18.5rem, 42vw) !important;
+  gap: .5rem !important;
+  flex: 0 1 24rem !important;
+  width: min(24rem, 40vw) !important;
   max-width: 24rem !important;
-  min-width: 13rem !important;
-  height: 2.55rem !important;
-  border: 1px solid rgba(229, 205, 154, .22) !important;
-  border-radius: .4rem !important;
-  background: rgba(245, 234, 213, .08) !important;
-  padding: 0 .72rem 0 .55rem !important;
+  min-width: 18rem !important;
+  height: 2.75rem !important;
+  border: 1px solid rgba(229, 205, 154, .30) !important;
+  border-radius: .55rem !important;
+  background: rgba(245, 234, 213, .10) !important;
+  padding: 0 .75rem 0 .55rem !important;
   color: #f5ead5 !important;
 }
 .mbe-ref-form:focus-within {
-  border-color: rgba(229, 205, 154, .48) !important;
-  background: rgba(245, 234, 213, .12) !important;
+  border-color: rgba(229, 205, 154, .62) !important;
+  background: rgba(245, 234, 213, .14) !important;
 }
 .mbe-ref-badge {
   display: inline-grid !important;
   place-items: center !important;
   flex: 0 0 auto !important;
-  width: 1.5rem !important;
-  height: 1.5rem !important;
-  border-radius: .22rem !important;
+  width: 2.3rem !important;
+  height: 2.3rem !important;
+  border-radius: .45rem !important;
   background: #c9a44c !important;
   color: #0b1f3a !important;
-  font-size: .48rem !important;
+  font-size: .7rem !important;
   font-weight: 600 !important;
   letter-spacing: .02em !important;
 }
 .mbe-ref-picker-toggle {
   display: inline-flex !important;
   align-items: center !important;
-  gap: .4rem !important;
+  gap: .65rem !important;
   flex: 0 0 auto !important;
   border: 0 !important;
   background: transparent !important;
@@ -337,7 +341,7 @@
   border: 0 !important;
   background: transparent !important;
   color: #f5ead5 !important;
-  font: 600 1rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
+  font: 600 1.125rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
   letter-spacing: 0 !important;
   outline: 0 !important;
 }
@@ -351,21 +355,22 @@
   align-items: center !important;
   justify-content: center !important;
   flex: 0 0 auto !important;
-  height: 2.55rem !important;
-  min-width: 2.55rem !important;
-  border: 1px solid rgba(229, 205, 154, .18) !important;
-  border-radius: .4rem !important;
+  height: 2.75rem !important;
+  min-width: 3.5rem !important;
+  border: 1px solid rgba(229, 205, 154, .28) !important;
+  border-radius: .55rem !important;
   background: rgba(245, 234, 213, .07) !important;
   color: rgba(245, 234, 213, .72) !important;
-  padding: 0 .78rem !important;
-  font: 600 .7rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
-  letter-spacing: .08em !important;
+  padding: 0 .8rem !important;
+  font: 600 .72rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
+  letter-spacing: .10em !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
   cursor: pointer !important;
 }
 .mbe-ref-step {
-  width: 2.55rem !important;
+  width: 3.5rem !important;
+  min-width: 3.5rem !important;
   padding: 0 !important;
 }
 .mbe-ref-step:hover,
@@ -393,6 +398,7 @@
 .mbe-ref-menu-wrap {
   position: relative !important;
   flex: 0 0 auto !important;
+  min-width: 0 !important;
 }
 .mbe-ref-picker,
 .mbe-ref-recent-dropdown,
@@ -401,24 +407,24 @@
   top: calc(100% + .45rem) !important;
   z-index: 120 !important;
   overflow: hidden !important;
-  border: 1px solid rgba(229, 205, 154, .24) !important;
-  border-radius: .45rem !important;
+  border: 1px solid rgba(229, 205, 154, .30) !important;
+  border-radius: .7rem !important;
   background: rgba(11, 31, 58, .98) !important;
   color: #f5ead5 !important;
   box-shadow: 0 22px 55px rgba(0,0,0,.42) !important;
 }
 .mbe-ref-picker {
-  left: 50% !important;
-  width: min(24rem, calc(100vw - 1.5rem)) !important;
-  transform: translateX(-50%) !important;
+  left: 0 !important;
+  width: min(24rem, calc(100vw - 2rem)) !important;
+  transform: none !important;
 }
 .mbe-ref-recent-dropdown,
 .mbe-ref-all-dropdown {
   right: 0 !important;
-  width: min(15rem, calc(100vw - 1.5rem)) !important;
+  width: min(16rem, calc(100vw - 2rem)) !important;
 }
 .mbe-ref-all-dropdown {
-  width: min(24rem, calc(100vw - 1.5rem)) !important;
+  width: min(28rem, calc(100vw - 2rem)) !important;
 }
 .mbe-ref-picker[hidden],
 .mbe-ref-recent-dropdown[hidden],
@@ -427,10 +433,11 @@
 }
 .mbe-ref-picker-head {
   display: grid !important;
-  grid-template-columns: 1.8rem minmax(0, 1fr) auto 1.8rem !important;
+  grid-template-columns: 2.35rem minmax(0, 1fr) auto 2.35rem !important;
   align-items: center !important;
-  gap: .35rem !important;
-  padding: .55rem .65rem !important;
+  gap: .45rem !important;
+  min-height: 3.5rem !important;
+  padding: .5rem .75rem !important;
   border-bottom: 1px solid rgba(229, 205, 154, .14) !important;
 }
 .mbe-ref-picker-title {
@@ -443,13 +450,13 @@
 .mbe-ref-go {
   display: inline-grid !important;
   place-items: center !important;
-  min-width: 1.8rem !important;
-  height: 1.8rem !important;
+  min-width: 2.35rem !important;
+  height: 2.35rem !important;
   border: 0 !important;
-  border-radius: .35rem !important;
+  border-radius: .55rem !important;
   background: rgba(245, 234, 213, .08) !important;
   color: rgba(245, 234, 213, .72) !important;
-  font: 600 .72rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
+  font: 600 .875rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
   cursor: pointer !important;
 }
 .mbe-ref-back[hidden] {
@@ -470,7 +477,7 @@
 .mbe-ref-grid,
 .mbe-ref-recent-list {
   display: grid !important;
-  gap: .35rem !important;
+  gap: .4rem !important;
   padding: .75rem !important;
 }
 .mbe-ref-grid {
@@ -479,12 +486,12 @@
 .mbe-ref-grid button,
 .mbe-ref-recent-list button,
 .mbe-ref-empty {
-  min-height: 1.7rem !important;
+  min-height: 2.25rem !important;
   border: 0 !important;
-  border-radius: .35rem !important;
+  border-radius: .55rem !important;
   background: transparent !important;
   color: rgba(245, 234, 213, .72) !important;
-  font: 600 .82rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
+  font: 600 .875rem var(--mbe-font-ui, Jost, system-ui, sans-serif) !important;
   letter-spacing: 0 !important;
 }
 .mbe-ref-grid button,
@@ -515,6 +522,8 @@
   }
   .mbe-ref-nav {
     gap: .3rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   .mbe-ref-form {
     width: auto !important;
@@ -591,6 +600,31 @@
     return chapter >= 1 && chapter <= referenceNavConfig.chapterCount && verse >= 1 && verse <= (referenceNavConfig.verseCounts[chapter] || 0);
   }
 
+  function referencePinDesktopReader() {
+    if (!window.matchMedia || !window.matchMedia('(min-width: 1024px)').matches) return;
+    if (!document.querySelector('.split-reader')) return;
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+  }
+
+  function referenceScrollVerse(button) {
+    const shouldUsePaneScroll = window.matchMedia && window.matchMedia('(min-width: 1024px)').matches;
+    const paneBody = button.closest?.('.scripture-pane-body');
+    if (shouldUsePaneScroll && paneBody) {
+      const buttonRect = button.getBoundingClientRect();
+      const paneRect = paneBody.getBoundingClientRect();
+      const targetTop = paneBody.scrollTop + buttonRect.top - paneRect.top - Math.max(24, (paneBody.clientHeight - buttonRect.height) / 2);
+      paneBody.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
+      referencePinDesktopReader();
+      window.setTimeout(referencePinDesktopReader, 160);
+      return;
+    }
+    button.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
   function referenceSelectedVerse(chapter) {
     const hashMatch = (window.location.hash || '').match(/^#v-?(\d+)$/);
     if (hashMatch && referenceValid(chapter, Number(hashMatch[1]))) return Number(hashMatch[1]);
@@ -662,12 +696,21 @@
     const button = referenceVerseButton(chapter, verse);
     if (button) {
       button.click();
-      button.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      referenceScrollVerse(button);
+      window.setTimeout(() => {
+        const freshButton = referenceVerseButton(chapter, verse);
+        if (freshButton) referenceScrollVerse(freshButton);
+      }, 80);
+      window.setTimeout(() => {
+        const freshButton = referenceVerseButton(chapter, verse);
+        if (freshButton) referenceScrollVerse(freshButton);
+      }, 220);
     }
     const hash = '#v' + verse;
     if (window.location.hash !== hash) history.replaceState(null, '', hash);
     const input = document.querySelector('[data-mbe-ref-input]');
     if (input) input.value = referenceFormat(chapter, verse);
+    window.setTimeout(referencePinDesktopReader, 40);
   }
 
   function referenceFindStrip() {
@@ -890,8 +933,10 @@
     });
 
     referenceAddRecent(currentChapter, currentVerse);
+    referencePinDesktopReader();
     if ((window.location.hash || '').match(/^#v-?\d+$/)) {
       window.setTimeout(() => referenceSelect(currentChapter, referenceSelectedVerse(currentChapter)), 120);
+      window.setTimeout(referencePinDesktopReader, 240);
     }
   }
   // MBE reference navigator end
@@ -899,6 +944,9 @@
 
   function ensureShell() {
     if (!document.body) return;
+    const isReaderShell = Boolean(document.querySelector('.split-reader'));
+    document.documentElement.classList.toggle('mbe-reader-shell-active', isReaderShell);
+    document.body.classList.toggle('mbe-reader-shell-active', isReaderShell);
     installReferenceNavigator();
     ensureIllustratedAssets();
     ensureLogo();
