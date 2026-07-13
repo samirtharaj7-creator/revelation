@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[90484,[],"ViewportBoundary"]
-3:I[90484,[],"MetadataBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Revelation 7: The Sealed Servants and the Great Multitude | Revelation Study"}],["$","meta","1",{"name":"description","content":"Revelation 7 answers the question at the end of the sixth seal by showing God's sealed servants on earth and the white-robed multitude before the throne. The chapter moves from restrained winds to washed robes, from sealing to worship, and from tribulation to the Lamb's comfort."}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qMbsPXf8G-RtgDxPLjusZ"}

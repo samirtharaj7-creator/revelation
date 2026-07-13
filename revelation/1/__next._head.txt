@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[90484,[],"ViewportBoundary"]
-3:I[90484,[],"MetadataBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Revelation 1: The Revelation of Jesus Christ | Revelation Study"}],["$","meta","1",{"name":"description","content":"Revelation 1 introduces the book as a Christ-centered prophecy for the church. It moves from prologue and blessing, to greeting and doxology, to John's exile on Patmos, and finally to the vision of the risen Son of Man among the seven lampstands."}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qMbsPXf8G-RtgDxPLjusZ"}

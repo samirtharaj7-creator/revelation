@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[90484,[],"ViewportBoundary"]
-3:I[90484,[],"MetadataBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Revelation 17: Babylon, the Woman, and the Beast | Revelation Study"}],["$","meta","1",{"name":"description","content":"Revelation 17 exposes Babylon as a religious-political system of false worship, spiritual intoxication, coercive alliance, persecution, and final collapse before the Lamb."}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qMbsPXf8G-RtgDxPLjusZ"}
