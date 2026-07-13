@@ -115,7 +115,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-illustrated.css?v=rvx-63';
+    const href = '/revelation-site.css?v=rvx-79';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -374,6 +374,7 @@
   };
 
   function installReferenceNavStyles() {
+    if (window.getComputedStyle(document.documentElement).getPropertyValue('--mbe-reference-nav-ready').trim() === '1') return;
     if (!document.head || document.getElementById('mbe-reference-nav-style')) return;
     const style = document.createElement('style');
     style.id = 'mbe-reference-nav-style';

@@ -28,8 +28,21 @@ for (const file of txtArtifacts) {
 }
 
 const staleDirs = [
-  '_next/static/chunks',
-  '_next/static/qMbsPXf8G-RtgDxPLjusZ',
+  '_next',
+  'design-preview',
+  'content-audits',
+];
+
+const staleFiles = [
+  'assets/revelation-hero-daniel-style.png',
+  'assets/revelation-hero-engraving.png',
+  'assets/revelation-hero-hd.png',
+  '.DS_Store',
+  'articles/.DS_Store',
+  'revelation/.DS_Store',
+  'timeline/.DS_Store',
+  'scripts/audit-revelation-humanization.mjs',
+  'scripts/validate-revelation-theology.mjs',
 ];
 
 let removedDirs = 0;
@@ -40,4 +53,11 @@ for (const dir of staleDirs) {
   removedDirs += 1;
 }
 
-console.log(`Removed ${removedFiles} text export artifacts and ${removedDirs} stale Next runtime directories.`);
+for (const file of staleFiles) {
+  const path = join(root, file);
+  if (!existsSync(path)) continue;
+  unlinkSync(path);
+  removedFiles += 1;
+}
+
+console.log(`Removed ${removedFiles} stale files and ${removedDirs} obsolete artifact directories.`);
