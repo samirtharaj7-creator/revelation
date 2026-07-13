@@ -656,6 +656,64 @@ html.dark .background-page {
   font-weight: 600 !important;
 }
 
+.articles-page {
+  background:
+    radial-gradient(1200px 520px at 50% -12%, rgba(201, 164, 76, .08), transparent 60%),
+    linear-gradient(180deg, #0d1c33 0%, #081521 45%, #06111d 100%) !important;
+  color: #ece0c4 !important;
+}
+
+.articles-hero {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background: #081521 !important;
+}
+
+.articles-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: -5.75rem -1.5rem -2rem !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background-image:
+    linear-gradient(90deg, rgba(8, 21, 33, .92) 0%, rgba(8, 21, 33, .74) 34%, rgba(8, 21, 33, .36) 68%, rgba(8, 21, 33, .14) 100%),
+    linear-gradient(180deg, rgba(8, 21, 33, .26) 0%, rgba(8, 21, 33, .18) 38%, rgba(8, 21, 33, .72) 78%, #081521 100%),
+    url("/assets/revelation-hero-hd.png?v=2");
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  opacity: .74 !important;
+  filter: saturate(.82) contrast(.96) brightness(.78) !important;
+  transform: scale(1.025) !important;
+  transform-origin: center top !important;
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%),
+    linear-gradient(180deg, #000 0%, #000 72%, rgba(0, 0, 0, .62) 86%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%),
+    linear-gradient(180deg, #000 0%, #000 72%, rgba(0, 0, 0, .62) 86%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.articles-hero::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background:
+    radial-gradient(ellipse at 16% 58%, rgba(8, 21, 33, .96) 0%, rgba(8, 21, 33, .70) 34%, transparent 62%),
+    linear-gradient(90deg, rgba(8, 21, 33, .72) 0%, rgba(8, 21, 33, .34) 48%, rgba(8, 21, 33, .72) 100%),
+    linear-gradient(180deg, rgba(5, 15, 28, .18) 0%, rgba(5, 15, 28, 0) 36%, rgba(8, 21, 33, .66) 86%, #081521 100%);
+}
+
+.articles-hero > * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
 .articles-hero h1,
 .articles-category-heading,
 .article-document-header h1 {
@@ -1510,6 +1568,26 @@ body > footer,
 body > main {
   display: block !important;
   min-height: 100vh !important;
+}
+
+body:has(.reader-page) > .mbe-global-footer,
+body.mbe-reader-shell-active > .mbe-global-footer {
+  display: none !important;
+}
+
+body:has(.reader-page) > main,
+body.mbe-reader-shell-active > main {
+  min-height: 0 !important;
+}
+
+@media (min-width: 1024px) {
+  html:has(.reader-page),
+  body:has(.reader-page),
+  html.mbe-reader-shell-active,
+  body.mbe-reader-shell-active {
+    height: 100dvh !important;
+    overflow: hidden !important;
+  }
 }
 
 .reader-header {
