@@ -2,6 +2,7 @@
   const tool = "revelation";
   const headerMarkup = "<header class=\"mbe-global-shell\" data-tool=\"revelation\" data-embedded=\"true\">\n      <div class=\"mbe-shell-wrap\">\n        <div class=\"mbe-ribbon-left\">\n          <a class=\"mbe-ribbon-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-ribbon-logo\" src=\"/assets/my-bible-explorer-logo.png\" alt=\"My Bible Explorer\"></a>\n          <a class=\"mbe-ribbon-back\" href=\"https://mybibleexplorer.com/#journeys\">Back to Library</a>\n        </div>\n        <nav class=\"mbe-global-nav\" aria-label=\"My Bible Explorer\">\n          <details class=\"mbe-library-menu\">\n            <summary class=\"mbe-library-toggle\">Library</summary>\n            <div class=\"mbe-library-panel\">\n              <div class=\"mbe-library-grid\">\n            <a class=\"mbe-library-item\" href=\"https://hermeneutics.mybibleexplorer.com\"><span class=\"mbe-library-name\">Hermeneutics</span><span class=\"mbe-library-desc\">Learn to read Scripture faithfully</span></a>\n            <a class=\"mbe-library-item\" href=\"https://psalms.mybibleexplorer.com\"><span class=\"mbe-library-name\">Psalms</span><span class=\"mbe-library-desc\">Worship, lament, praise, and prayer</span></a>\n            <a class=\"mbe-library-item\" href=\"https://daniel.mybibleexplorer.com\"><span class=\"mbe-library-name\">Daniel</span><span class=\"mbe-library-desc\">Prophecy and providence</span></a>\n            <a class=\"mbe-library-item\" href=\"https://revelation.mybibleexplorer.com/\" aria-current=\"page\"><span class=\"mbe-library-name\">Revelation</span><span class=\"mbe-library-desc\">Symbols, judgment, and final hope</span></a>\n            <a class=\"mbe-library-item\" href=\"https://sanctuary.mybibleexplorer.com/#structure\"><span class=\"mbe-library-name\">Sanctuary</span><span class=\"mbe-library-desc\">A blueprint of salvation</span></a>\n            <a class=\"mbe-library-item\" href=\"https://lastdayevents.mybibleexplorer.com/index.html\"><span class=\"mbe-library-name\">Last Day Events</span><span class=\"mbe-library-desc\">Earth's final chapter</span></a>\n              </div>\n            </div>\n          </details>\n          <a class=\"mbe-ribbon-give\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        </nav>\n      </div>\n    </header>\n";
   const footerMarkup = "<footer class=\"mbe-global-footer\" data-tool=\"revelation\">\n      <div class=\"mbe-shell-wrap mbe-footer-wrap\">\n        <a class=\"mbe-footer-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-footer-logo\" src=\"/assets/my-bible-explorer-logo.png\" alt=\"My Bible Explorer\"></a>\n        <span>Know the Word. Live the Word.</span>\n        <span>To contact, email <a class=\"mbe-footer-link\" href=\"mailto:admin@mybibleexplorer.com\">admin@mybibleexplorer.com</a></span>\n        <a class=\"mbe-footer-link\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        <span>&copy; <span data-mbe-year></span> My Bible Explorer</span>\n      </div>\n    </footer>\n    ";
+  const readerFooterMarkup = "<footer class=\"mbe-reader-footer\" data-mbe-reader-footer aria-hidden=\"true\">\n      <div class=\"mbe-reader-footer-inner\">\n        <a class=\"mbe-reader-footer-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-reader-footer-logo\" src=\"/assets/my-bible-explorer-logo.png\" alt=\"My Bible Explorer\"></a>\n        <span class=\"mbe-reader-footer-tagline\">Know the Word. Live the Word.</span>\n        <span class=\"mbe-reader-footer-contact\">To contact, email <a class=\"mbe-reader-footer-link\" href=\"mailto:admin@mybibleexplorer.com\">admin@mybibleexplorer.com</a></span>\n        <a class=\"mbe-reader-footer-link\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        <span class=\"mbe-reader-footer-copy\">&copy; <span data-mbe-year></span> My Bible Explorer</span>\n      </div>\n    </footer>\n    ";
 
   function updateYear() {
     document.querySelectorAll('[data-mbe-year]').forEach((node) => {
@@ -9,9 +10,112 @@
     });
   }
 
+  function isDesktopReaderViewport() {
+    return Boolean(window.matchMedia && window.matchMedia('(min-width: 1024px)').matches);
+  }
+
+  function removeReaderFooter() {
+    document.querySelectorAll('.mbe-reader-pane-footer, .mbe-reader-footer').forEach((node) => node.remove());
+    document.documentElement.classList.remove('mbe-reader-footer-visible');
+    document.body?.classList.remove('mbe-reader-footer-visible');
+  }
+
+  function readerScrollPanes() {
+    return Array.from(document.querySelectorAll('.scripture-pane-body, .commentary-pane-body'));
+  }
+
+  function readerPaneAtBottom(pane) {
+    if (!pane) return false;
+    const tolerance = document.body?.classList.contains('mbe-reader-footer-visible') ? 112 : 4;
+    return pane.scrollHeight - pane.scrollTop - pane.clientHeight <= tolerance;
+  }
+
+  function setReaderFooterVisible(footer, visible) {
+    document.documentElement.classList.toggle('mbe-reader-footer-visible', visible);
+    document.body?.classList.toggle('mbe-reader-footer-visible', visible);
+    if (footer) footer.setAttribute('aria-hidden', visible ? 'false' : 'true');
+  }
+
+  function updateReaderFooterState() {
+    const footer = document.querySelector('.mbe-reader-footer');
+    const readerShell = document.querySelector('.split-reader');
+    if (!footer || !readerShell || !isDesktopReaderViewport()) {
+      window.__mbeReaderFooterSuppress = false;
+      setReaderFooterVisible(footer, false);
+      return;
+    }
+
+    const panes = readerScrollPanes();
+    const bottomPanes = panes.filter(readerPaneAtBottom);
+    if (bottomPanes.length === 0) window.__mbeReaderFooterSuppress = false;
+    const shouldShow = bottomPanes.length > 0 && !window.__mbeReaderFooterSuppress;
+    const wasShown = document.body.classList.contains('mbe-reader-footer-visible');
+
+    setReaderFooterVisible(footer, shouldShow);
+
+    if (shouldShow && !wasShown) {
+      const keepBottomPanesPinned = () => {
+        bottomPanes.forEach((pane) => pane.scrollTo({ top: pane.scrollHeight, behavior: 'auto' }));
+      };
+      window.requestAnimationFrame(keepBottomPanesPinned);
+      window.setTimeout(keepBottomPanesPinned, 90);
+      window.setTimeout(keepBottomPanesPinned, 260);
+    }
+  }
+
+  function handleReaderFooterWheel(event) {
+    if (event.deltaY < 0 && document.body.classList.contains('mbe-reader-footer-visible')) {
+      window.__mbeReaderFooterSuppress = true;
+      setReaderFooterVisible(document.querySelector('.mbe-reader-footer'), false);
+      return;
+    }
+
+    if (event.deltaY > 0) {
+      window.__mbeReaderFooterSuppress = false;
+      window.requestAnimationFrame(updateReaderFooterState);
+    }
+  }
+
+  function installReaderFooterListeners() {
+    readerScrollPanes().forEach((pane) => {
+      if (pane.dataset.mbeReaderFooterListener === 'true') return;
+      pane.dataset.mbeReaderFooterListener = 'true';
+      pane.addEventListener('scroll', updateReaderFooterState, { passive: true });
+      pane.addEventListener('wheel', handleReaderFooterWheel, { passive: true });
+    });
+    if (!window.__mbeReaderFooterResizeListener) {
+      window.__mbeReaderFooterResizeListener = true;
+      window.addEventListener('resize', updateReaderFooterState, { passive: true });
+    }
+  }
+
+  function ensureReaderFooter() {
+    document.querySelectorAll('.mbe-reader-pane-footer').forEach((node) => node.remove());
+    if (!isDesktopReaderViewport()) {
+      removeReaderFooter();
+      return;
+    }
+
+    const readerPage = document.querySelector('.reader-page');
+    const splitReader = document.querySelector('.split-reader');
+    if (!readerPage || !splitReader) return;
+
+    let footer = readerPage.querySelector('.mbe-reader-footer');
+    if (!footer) {
+      splitReader.insertAdjacentHTML('afterend', readerFooterMarkup);
+      footer = readerPage.querySelector('.mbe-reader-footer');
+    } else if (footer.previousElementSibling !== splitReader) {
+      splitReader.insertAdjacentElement('afterend', footer);
+    }
+
+    installReaderFooterListeners();
+    updateReaderFooterState();
+    updateYear();
+  }
+
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-illustrated.css?v=rvx-51';
+    const href = '/revelation-illustrated.css?v=rvx-61';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -720,6 +824,13 @@
     }) || null;
   }
 
+  function referenceRemoveLegacyNavigation(activeStrip) {
+    document.querySelectorAll('nav.chapter-strip, .chapter-strip, .reader-chapter-nav').forEach((node) => {
+      if (node === activeStrip || node.classList?.contains('mbe-ref-strip')) return;
+      node.remove();
+    });
+  }
+
   function referenceCreateStrip() {
     const strip = document.createElement('nav');
     strip.className = 'mbe-ref-strip no-print';
@@ -749,6 +860,7 @@
     const strip = referenceFindStrip() || referenceCreateStrip();
     if (!strip) return;
     const signature = referenceNavConfig.slug + '-' + currentChapter;
+    referenceRemoveLegacyNavigation(strip);
     if (strip.getAttribute('data-mbe-ref-nav') === signature) return;
 
     const currentVerse = referenceSelectedVerse(currentChapter);
@@ -954,11 +1066,13 @@
       document.body.insertAdjacentHTML('afterbegin', headerMarkup);
     }
     const existingFooters = Array.from(document.querySelectorAll('.mbe-global-footer'));
-    if (isReaderShell) {
+    if (isReaderShell && isDesktopReaderViewport()) {
       existingFooters.forEach((node) => node.remove());
+      ensureReaderFooter();
       updateYear();
       return;
     }
+    removeReaderFooter();
     let footer = existingFooters.find((node) => node.getAttribute('data-tool') === tool) || null;
     existingFooters.forEach((node) => {
       if (node !== footer) node.remove();
@@ -973,6 +1087,64 @@
     updateYear();
   }
 
+  let shellRefreshPending = false;
+  function scheduleShellRefresh() {
+    if (shellRefreshPending) return;
+    shellRefreshPending = true;
+    window.requestAnimationFrame(() => {
+      shellRefreshPending = false;
+      ensureShell();
+    });
+  }
+
+  function readerNavigationMutation(node) {
+    if (!node || node.nodeType !== 1) return false;
+    return Boolean(
+      node.matches?.('.reader-page, .split-reader, .chapter-strip, .reader-chapter-nav, .scripture-pane, .commentary-pane') ||
+      node.querySelector?.('.reader-page, .split-reader, .chapter-strip, .reader-chapter-nav, .scripture-pane, .commentary-pane')
+    );
+  }
+
+  function installShellRefreshHooks() {
+    if (window.__mbeRevelationShellHooksInstalled) return;
+    window.__mbeRevelationShellHooksInstalled = true;
+
+    ['pushState', 'replaceState'].forEach((method) => {
+      const original = history[method];
+      if (typeof original !== 'function') return;
+      history[method] = function patchedHistoryMethod() {
+        const result = original.apply(this, arguments);
+        window.setTimeout(scheduleShellRefresh, 0);
+        window.setTimeout(scheduleShellRefresh, 120);
+        return result;
+      };
+    });
+
+    window.addEventListener('popstate', () => {
+      window.setTimeout(scheduleShellRefresh, 0);
+      window.setTimeout(scheduleShellRefresh, 120);
+    });
+    window.addEventListener('hashchange', () => {
+      window.setTimeout(scheduleShellRefresh, 0);
+    });
+
+    const attachObserver = () => {
+      if (!document.body || window.__mbeRevelationShellObserver) return;
+      window.__mbeRevelationShellObserver = new MutationObserver((mutations) => {
+        const shouldRefresh = mutations.some((mutation) => {
+          return Array.from(mutation.addedNodes).some(readerNavigationMutation) ||
+            Array.from(mutation.removedNodes).some(readerNavigationMutation);
+        });
+        if (shouldRefresh) scheduleShellRefresh();
+      });
+      window.__mbeRevelationShellObserver.observe(document.body, { childList: true, subtree: true });
+    };
+
+    if (document.body) attachObserver();
+    else document.addEventListener('DOMContentLoaded', attachObserver, { once: true });
+  }
+
+  installShellRefreshHooks();
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ensureShell, { once: true });
   } else {
