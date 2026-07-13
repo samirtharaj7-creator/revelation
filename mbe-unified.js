@@ -115,7 +115,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-illustrated.css?v=rvx-61';
+    const href = '/revelation-illustrated.css?v=rvx-62';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -170,6 +170,15 @@
     if (metaBlock && !metaBlock.classList.contains('home-showcase-rule')) {
       metaBlock.remove();
     }
+  }
+
+  function ensureIntroductionHero() {
+    if (!window.location.pathname.replace(/\/+$/, '/').endsWith('/introduction/')) return;
+    const title = document.querySelector('#introduction-title');
+    if (!title || title.getAttribute('data-rvx-intro-title') === 'split') return;
+    title.setAttribute('aria-label', 'Introduction to the Book of Revelation');
+    title.setAttribute('data-rvx-intro-title', 'split');
+    title.innerHTML = '<span class="background-title-kicker">Introduction to the Book of</span><span class="background-title-main">Revelation</span>';
   }
 
   const SHORT_CHAPTER_SUMMARIES = {
@@ -1054,6 +1063,7 @@
     ensureIllustratedAssets();
     ensureLogo();
     ensureHomeHero();
+    ensureIntroductionHero();
     ensureChapterSummary();
     ensureChapterSummaryObserver();
     ensureDarkThemeObserver();

@@ -504,16 +504,39 @@ html.dark .background-page {
 }
 
 .background-hero h1 {
-  max-width: 11.5ch !important;
+  max-width: min(100%, 72rem) !important;
   margin-top: 1.25rem !important;
   color: #f3e8cc !important;
   font-family: var(--mbe-font-display) !important;
-  font-size: 6.8rem !important;
-  font-weight: 600 !important;
+  font-size: clamp(4.5rem, 8vw, 7rem) !important;
+  font-weight: 500 !important;
   letter-spacing: 0 !important;
-  line-height: .93 !important;
+  line-height: .9 !important;
   text-transform: uppercase !important;
   text-shadow: 0 18px 42px rgba(0, 0, 0, .34);
+}
+
+.background-hero h1 span {
+  display: block !important;
+}
+
+.background-hero h1 .background-title-kicker {
+  margin-bottom: 1.125rem !important;
+  color: #d8b866 !important;
+  font-size: clamp(1.32rem, 2.5vw, 2.25rem) !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  letter-spacing: .28em !important;
+  white-space: nowrap !important;
+}
+
+.background-hero h1 .background-title-main {
+  color: #f3e8cc !important;
+  font-size: inherit !important;
+  font-weight: 500 !important;
+  line-height: .9 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
 }
 
 .background-subtitle {
@@ -1601,8 +1624,13 @@ body > #root:empty::before {
   }
 
   .background-hero h1 {
-    max-width: 10.5ch !important;
-    font-size: 4.5rem !important;
+    max-width: min(100%, 60rem) !important;
+    font-size: 5.25rem !important;
+  }
+
+  .background-hero h1 .background-title-kicker {
+    font-size: 1.5rem !important;
+    letter-spacing: .24em !important;
   }
 
   .background-subtitle {
@@ -1669,6 +1697,11 @@ body > #root:empty::before {
     font-size: 5.25rem !important;
   }
 
+  .background-hero h1 .background-title-kicker {
+    font-size: 1.5rem !important;
+    letter-spacing: .24em !important;
+  }
+
   .background-subtitle {
     font-size: 1.25rem !important;
   }
@@ -1729,8 +1762,20 @@ body > #root:empty::before {
   }
 
   .background-hero h1 {
-    max-width: 9.5ch !important;
-    font-size: 3rem !important;
+    max-width: 100% !important;
+    font-size: 3.75rem !important;
+  }
+
+  .background-hero h1 .background-title-kicker {
+    margin-bottom: .72rem !important;
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    letter-spacing: .18em !important;
+    white-space: normal !important;
+  }
+
+  .background-hero h1 .background-title-main {
+    white-space: normal !important;
   }
 
   .background-subtitle {
