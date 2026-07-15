@@ -115,7 +115,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-site.css?v=rvx-84';
+    const href = '/revelation-site.css?v=rvx-88';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -216,7 +216,7 @@
     return Number.isInteger(chapter) ? chapter : null;
   }
 
-  const COMMENTARY_REVISION = 'rvx-84';
+  const COMMENTARY_REVISION = 'rvx-88';
   const commentaryBundles = new Map();
   let verseCommentaryBound = false;
   let commentaryRenderToken = 0;
@@ -506,7 +506,13 @@
         document.querySelector('.commentary-pane-body')?.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
-      if (isInlineNotesViewport()) openInlineNoteFor(button);
+      if (isInlineNotesViewport()) {
+        if (options.inlineAction === 'close') closeInlineNoteFor(button);
+        else if (options.inlineAction === 'open') openInlineNoteFor(button);
+        else removeInlineNotes();
+      } else {
+        removeInlineNotes();
+      }
       updateReaderFooterState();
       return true;
     } catch (error) {
@@ -540,7 +546,22 @@
 
         const button = event.target.closest?.('.scripture-card[id^="revelation-"]');
         if (!button) return;
-        renderVerseCommentary(button);
+        if (isInlineNotesViewport()) {
+          if (button.nextElementSibling?.matches?.('[data-revelation-inline-note]')) {
+            closeInlineNoteFor(button);
+            return;
+          }
+
+          const shell = document.querySelector('aside.commentary-pane .commentary-shell');
+          if (shell?.querySelector(`[data-rvx-commentary="${button.id}"]`)) {
+            setSelectedVerse(button);
+            openInlineNoteFor(button);
+            updateReaderFooterState();
+            return;
+          }
+        }
+
+        renderVerseCommentary(button, { inlineAction: 'open' });
       });
     }
 
@@ -584,6 +605,9 @@
 
   function removeInlineNotes() {
     document.querySelectorAll(INLINE_NOTE_SELECTOR).forEach((node) => node.remove());
+    document.querySelectorAll('.scripture-card[id^="revelation-"][aria-expanded="true"]').forEach((node) => {
+      node.setAttribute('aria-expanded', 'false');
+    });
   }
 
   function verseFromButton(button) {
@@ -626,16 +650,27 @@
     if (!source) return false;
     const clone = source.cloneNode(true);
     clone.classList.add('revelation-inline-note');
+    clone.setAttribute('data-state', 'open');
     clone.setAttribute('data-revelation-inline-note', '');
     clone.setAttribute('aria-label', `${info.label} study note`);
-    clone.querySelectorAll('.commentary-actions, .no-print').forEach((node) => node.remove());
+    clone.querySelectorAll('.commentary-actions, .no-print, [data-revelation-copy]').forEach((node) => node.remove());
     sanitizeInlineNoteIds(clone, info.token);
 
     const button = document.getElementById(info.token);
     if (!button || !button.parentElement) return false;
     removeInlineNotes();
     button.insertAdjacentElement('afterend', clone);
+    button.setAttribute('aria-expanded', 'true');
+    clone.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     return true;
+  }
+
+  function closeInlineNoteFor(button) {
+    const info = verseFromButton(button);
+    if (!info) return;
+    const next = button.nextElementSibling;
+    if (next?.matches?.(INLINE_NOTE_SELECTOR)) next.remove();
+    button.setAttribute('aria-expanded', 'false');
   }
 
   function openInlineNoteFor(button) {
@@ -657,11 +692,6 @@
   function ensureInlineCommentaryNotes() {
     if (inlineNotesBound || !document.body) return;
     inlineNotesBound = true;
-    document.addEventListener('click', (event) => {
-      const button = event.target.closest?.('.scripture-card[id^="revelation-"]');
-      if (!button) return;
-      openInlineNoteFor(button);
-    });
     window.matchMedia('(max-width: 1023.98px)').addEventListener('change', (event) => {
       if (!event.matches) removeInlineNotes();
     });

@@ -1746,10 +1746,43 @@ html.dark .bg-background {
 }
 
 @media (max-width: 1023.98px) {
+  html.mbe-reader-shell-active,
+  html.mbe-reader-shell-active body,
+  body.mbe-reader-shell-active {
+    height: auto !important;
+    overflow: auto !important;
+  }
+
+  body.mbe-shell-managed > main:has(:is(.split-reader,.reader-shell)),
+  body:has(> .mbe-global-footer) > main:has(:is(.split-reader,.reader-shell)) {
+    contain: none !important;
+    overflow: visible !important;
+  }
+
+  .reader-page:has(.split-reader) .split-reader {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .reader-page:has(.split-reader) .scripture-pane,
+  .reader-page:has(.split-reader) .scripture-pane-body {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .reader-page:has(.split-reader) .commentary-pane {
+    display: none !important;
+  }
+
   .revelation-inline-note {
     display: block !important;
     width: 100% !important;
-    margin: .9rem 0 1.35rem !important;
+    margin: 1rem 0 1.4rem !important;
     padding: 1rem !important;
     border: 1px solid rgba(201, 164, 76, .28) !important;
     border-left: 3px solid #c9a44c !important;
@@ -1757,6 +1790,7 @@ html.dark .bg-background {
     background:
       linear-gradient(180deg, rgba(19, 45, 74, .96), rgba(11, 31, 58, .98)) !important;
     box-shadow: 0 16px 32px rgba(0, 0, 0, .22) !important;
+    animation: revelation-inline-note-open .18s ease-out both !important;
   }
 
   .revelation-inline-note .exposition-card-heading {
@@ -1780,6 +1814,18 @@ html.dark .bg-background {
 
   .revelation-inline-note .verse-study-grid {
     gap: .9rem !important;
+  }
+}
+
+@keyframes revelation-inline-note-open {
+  from {
+    opacity: 0;
+    transform: translateY(-.35rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
