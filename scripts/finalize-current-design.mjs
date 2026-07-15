@@ -2,8 +2,7 @@ import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const root = process.cwd();
-const cacheToken = 'rvx-88';
-const heroVersion = '4';
+const cacheToken = 'rvx-93';
 
 const summaries = {
   1: "Revelation 1 opens with Christ's unveiling to the churches. John sees the risen Son of Man among the seven lampstands.",
@@ -67,13 +66,14 @@ function finalize(path) {
     .replace(/<div hidden=""><!--\$--><!--\/\$--><\/div>/g, '')
     .replace(/<div class="fixed left-0 top-0 z-\[60\] h-1 bg-primary transition-\[width\]" style="width:0%"><\/div>/g, '')
     .replace(/<div class="reader-header-actions">[\s\S]*?<\/div><\/header>/g, '</header>')
+    .replace(/\s*<div class="commentary-actions no-print">[\s\S]*?<\/div>(?=<\/article>)/g, '')
     .replace(/<span class="reader-logo" aria-hidden="true"><svg[\s\S]*?<\/svg><\/span>/g, emblem)
     .replace(/<!--\$-->|<!--\/\$-->|<!-- -->/g, '');
 
   if (['index.html', 'introduction/index.html', 'articles/index.html'].includes(route)) {
     html = html.replace(
       /(<script>document\.documentElement\.classList\.add\("dark"\);<\/script>)/,
-      `$1\n    <link rel="preload" as="image" href="/assets/revelation-hero-hd.webp?v=${heroVersion}" type="image/webp" fetchpriority="high" />`,
+      `$1\n    <link rel="preload" as="image" href="/assets/revelation-hero-hd.webp?v=mbe-20260715-1" type="image/webp" fetchpriority="high" />`,
     );
   }
 

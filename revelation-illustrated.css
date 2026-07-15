@@ -230,7 +230,7 @@ html.dark .home-showcase {
   background-image:
     linear-gradient(90deg, rgba(11, 31, 58, .88) 0%, rgba(11, 31, 58, .58) 29%, rgba(11, 31, 58, .18) 62%, rgba(11, 31, 58, .06) 100%),
     linear-gradient(180deg, rgba(11, 31, 58, .06) 0%, rgba(11, 31, 58, .14) 42%, rgba(11, 31, 58, .58) 78%, rgba(8, 21, 33, .96) 100%),
-    url("/assets/revelation-hero-hd.webp?v=4");
+    url("/assets/revelation-hero-hd.webp?v=mbe-20260715-1");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,7 +450,7 @@ html.dark .background-page {
   background-image:
     linear-gradient(90deg, rgba(11, 31, 58, .94) 0%, rgba(11, 31, 58, .72) 38%, rgba(11, 31, 58, .20) 72%, rgba(11, 31, 58, .08) 100%),
     linear-gradient(180deg, rgba(11, 31, 58, .18) 0%, rgba(11, 31, 58, .20) 42%, rgba(11, 31, 58, .62) 78%, rgba(8, 21, 33, .96) 100%),
-    url("/assets/revelation-hero-hd.webp?v=4");
+    url("/assets/revelation-hero-hd.webp?v=mbe-20260715-1");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -723,7 +723,7 @@ html.dark .background-page {
   inset: 0 !important;
   z-index: -2 !important;
   pointer-events: none !important;
-  background-image: url("/assets/revelation-hero-hd.webp?v=4") !important;
+  background-image: url("/assets/revelation-hero-hd.webp?v=mbe-20260715-1") !important;
   background-position: center 32% !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -1154,7 +1154,7 @@ html.dark .bg-background {
   letter-spacing: 0 !important;
   line-height: 1.25rem !important;
   text-align: left !important;
-  cursor: help !important;
+  cursor: default !important;
   transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease !important;
 }
 
@@ -1400,9 +1400,19 @@ html.dark .bg-background {
   display: none !important;
 }
 
+.commentary-actions,
+[data-revelation-copy] {
+  display: none !important;
+}
+
 @media (min-width: 1024px) {
   .mbe-reader-footer {
     display: block !important;
+    position: fixed !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 75 !important;
     flex: 0 0 auto !important;
     width: 100% !important;
     max-height: 0 !important;
@@ -1413,6 +1423,7 @@ html.dark .bg-background {
     color: #b9ad90 !important;
     font-family: var(--mbe-font-ui) !important;
     opacity: 0 !important;
+    pointer-events: none !important;
     visibility: hidden !important;
     transform: translateY(.5rem) !important;
     transition: max-height .22s ease, opacity .18s ease, transform .22s ease, visibility .18s ease !important;
@@ -1425,6 +1436,7 @@ html.dark .bg-background {
     border-bottom-width: 1px !important;
     border-bottom-color: rgba(201, 164, 76, .12) !important;
     opacity: 1 !important;
+    pointer-events: auto !important;
     visibility: visible !important;
     transform: translateY(0) !important;
   }
@@ -2122,7 +2134,7 @@ body.mbe-reader-shell-active .reader-chapter-nav {
   background-image:
     linear-gradient(90deg, rgba(11, 31, 58, .92) 0%, rgba(11, 31, 58, .66) 31%, rgba(11, 31, 58, .18) 64%, rgba(11, 31, 58, .04) 100%),
     linear-gradient(180deg, rgba(11, 31, 58, .02) 0%, rgba(11, 31, 58, .08) 46%, rgba(8, 21, 33, .48) 82%, rgba(8, 21, 33, .82) 100%),
-    url("/assets/revelation-hero-hd.webp?v=4") !important;
+    url("/assets/revelation-hero-hd.webp?v=mbe-20260715-1") !important;
   background-position: center 22% !important;
   background-size: cover !important;
   opacity: 1 !important;
@@ -2283,4 +2295,14 @@ body > .mbe-global-shell + .reader-header {
   position: sticky !important;
   top: 46px !important;
   z-index: 1100 !important;
+}
+
+
+/* MBE asset delivery fallback: avoid Safari turning masked hero art transparent. */
+.home-showcase .home-showcase-hero::before,
+.background-page .background-hero::before {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  -webkit-mask-composite: initial !important;
+  mask-composite: initial !important;
 }

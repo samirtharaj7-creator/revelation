@@ -1,8 +1,8 @@
 (() => {
   const tool = "revelation";
-  const headerMarkup = "<header class=\"mbe-global-shell\" data-tool=\"revelation\" data-embedded=\"true\">\n      <div class=\"mbe-shell-wrap\">\n        <div class=\"mbe-ribbon-left\">\n          <a class=\"mbe-ribbon-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-ribbon-logo\" src=\"/assets/my-bible-explorer-logo.png\" alt=\"My Bible Explorer\"></a>\n          <a class=\"mbe-ribbon-back\" href=\"https://mybibleexplorer.com/#journeys\">Back to Library</a>\n        </div>\n        <nav class=\"mbe-global-nav\" aria-label=\"My Bible Explorer\">\n          <details class=\"mbe-library-menu\">\n            <summary class=\"mbe-library-toggle\">Library</summary>\n            <div class=\"mbe-library-panel\">\n              <div class=\"mbe-library-grid\">\n            <a class=\"mbe-library-item\" href=\"https://hermeneutics.mybibleexplorer.com\"><span class=\"mbe-library-name\">Hermeneutics</span><span class=\"mbe-library-desc\">Learn to read Scripture faithfully</span></a>\n            <a class=\"mbe-library-item\" href=\"https://psalms.mybibleexplorer.com\"><span class=\"mbe-library-name\">Psalms</span><span class=\"mbe-library-desc\">Worship, lament, praise, and prayer</span></a>\n            <a class=\"mbe-library-item\" href=\"https://daniel.mybibleexplorer.com\"><span class=\"mbe-library-name\">Daniel</span><span class=\"mbe-library-desc\">Prophecy and providence</span></a>\n            <a class=\"mbe-library-item\" href=\"https://revelation.mybibleexplorer.com/\" aria-current=\"page\"><span class=\"mbe-library-name\">Revelation</span><span class=\"mbe-library-desc\">Symbols, judgment, and final hope</span></a>\n            <a class=\"mbe-library-item\" href=\"https://sanctuary.mybibleexplorer.com/#structure\"><span class=\"mbe-library-name\">Sanctuary</span><span class=\"mbe-library-desc\">A blueprint of salvation</span></a>\n            <a class=\"mbe-library-item\" href=\"https://lastdayevents.mybibleexplorer.com/index.html\"><span class=\"mbe-library-name\">Last Day Events</span><span class=\"mbe-library-desc\">Earth's final chapter</span></a>\n              </div>\n            </div>\n          </details>\n          <a class=\"mbe-ribbon-give\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        </nav>\n      </div>\n    </header>\n";
-  const footerMarkup = "<footer class=\"mbe-global-footer\" data-tool=\"revelation\">\n      <div class=\"mbe-shell-wrap mbe-footer-wrap\">\n        <a class=\"mbe-footer-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-footer-logo\" src=\"/assets/my-bible-explorer-logo.png\" alt=\"My Bible Explorer\"></a>\n        <span>Know the Word. Live the Word.</span>\n        <span>To contact, email <a class=\"mbe-footer-link\" href=\"mailto:admin@mybibleexplorer.com\">admin@mybibleexplorer.com</a></span>\n        <a class=\"mbe-footer-link\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        <span>&copy; <span data-mbe-year></span> My Bible Explorer</span>\n      </div>\n    </footer>\n    ";
-  const readerFooterMarkup = "<footer class=\"mbe-reader-footer\" data-mbe-reader-footer aria-hidden=\"true\">\n      <div class=\"mbe-reader-footer-inner\">\n        <a class=\"mbe-reader-footer-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-reader-footer-logo\" src=\"/assets/my-bible-explorer-logo.png\" alt=\"My Bible Explorer\"></a>\n        <span class=\"mbe-reader-footer-tagline\">Know the Word. Live the Word.</span>\n        <span class=\"mbe-reader-footer-contact\">To contact, email <a class=\"mbe-reader-footer-link\" href=\"mailto:admin@mybibleexplorer.com\">admin@mybibleexplorer.com</a></span>\n        <a class=\"mbe-reader-footer-link\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        <span class=\"mbe-reader-footer-copy\">&copy; <span data-mbe-year></span> My Bible Explorer</span>\n      </div>\n    </footer>\n    ";
+  const headerMarkup = "<header class=\"mbe-global-shell\" data-tool=\"revelation\" data-embedded=\"true\">\n      <div class=\"mbe-shell-wrap\">\n        <div class=\"mbe-ribbon-left\">\n          <a class=\"mbe-ribbon-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-ribbon-logo\" src=\"https://mybibleexplorer.com/assets/my-bible-explorer-logo.png?v=mbe-20260715-1\" alt=\"My Bible Explorer\" width=\"107\" height=\"34\"></a>\n          <a class=\"mbe-ribbon-back\" href=\"https://mybibleexplorer.com/#journeys\">Back to Library</a>\n        </div>\n        <nav class=\"mbe-global-nav\" aria-label=\"My Bible Explorer\">\n          <details class=\"mbe-library-menu\">\n            <summary class=\"mbe-library-toggle\">Library</summary>\n            <div class=\"mbe-library-panel\">\n              <div class=\"mbe-library-grid\">\n            <a class=\"mbe-library-item\" href=\"https://hermeneutics.mybibleexplorer.com\"><span class=\"mbe-library-name\">Hermeneutics</span><span class=\"mbe-library-desc\">Learn to read Scripture faithfully</span></a>\n            <a class=\"mbe-library-item\" href=\"https://psalms.mybibleexplorer.com\"><span class=\"mbe-library-name\">Psalms</span><span class=\"mbe-library-desc\">Worship, lament, praise, and prayer</span></a>\n            <a class=\"mbe-library-item\" href=\"https://sanctuary.mybibleexplorer.com/#structure\"><span class=\"mbe-library-name\">Sanctuary</span><span class=\"mbe-library-desc\">A blueprint of salvation</span></a>\n            <a class=\"mbe-library-item\" href=\"https://lastdayevents.mybibleexplorer.com/index.html\"><span class=\"mbe-library-name\">Last Day Events</span><span class=\"mbe-library-desc\">Earth's final chapter</span></a>\n            <a class=\"mbe-library-item\" href=\"https://parables.mybibleexplorer.com\"><span class=\"mbe-library-name\">Parables</span><span class=\"mbe-library-desc\">Stories of the kingdom</span></a>\n            <a class=\"mbe-library-item\" href=\"https://romans.mybibleexplorer.com\"><span class=\"mbe-library-name\">Romans</span><span class=\"mbe-library-desc\">Righteousness by faith and life in the Spirit</span></a>\n            <a class=\"mbe-library-item\" href=\"https://corinthians.mybibleexplorer.com/\"><span class=\"mbe-library-name\">Corinthians</span><span class=\"mbe-library-desc\">Unity, worship, holy living, and resurrection</span></a>\n            <a class=\"mbe-library-item\" href=\"https://hebrews.mybibleexplorer.com/\"><span class=\"mbe-library-name\">Hebrews</span><span class=\"mbe-library-desc\">Christ, covenant, sanctuary, and persevering faith</span></a>\n            <a class=\"mbe-library-item\" href=\"https://isaiah.mybibleexplorer.com/\"><span class=\"mbe-library-name\">Isaiah</span><span class=\"mbe-library-desc\">Judgment, comfort, and gospel hope</span></a>\n            <a class=\"mbe-library-item\" href=\"https://daniel.mybibleexplorer.com\"><span class=\"mbe-library-name\">Daniel</span><span class=\"mbe-library-desc\">Prophecy and providence</span></a>\n            <a class=\"mbe-library-item\" href=\"https://revelation.mybibleexplorer.com/\" aria-current=\"page\"><span class=\"mbe-library-name\">Revelation</span><span class=\"mbe-library-desc\">Symbols, judgment, and final hope</span></a>\n            <a class=\"mbe-library-item\" href=\"https://christ.mybibleexplorer.com/\"><span class=\"mbe-library-name\">Life of Christ</span><span class=\"mbe-library-desc\">The life and ministry of Jesus</span></a>\n              </div>\n            </div>\n          </details>\n          <a class=\"mbe-ribbon-give\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        </nav>\n      </div>\n    </header>";
+  const footerMarkup = "<footer class=\"mbe-global-footer\" data-tool=\"revelation\">\n      <div class=\"mbe-shell-wrap mbe-footer-wrap\">\n        <a class=\"mbe-footer-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-footer-logo\" src=\"https://mybibleexplorer.com/assets/my-bible-explorer-logo.png?v=mbe-20260715-1\" alt=\"My Bible Explorer\" width=\"107\" height=\"34\"></a>\n        <span>Know the Word. Live the Word.</span>\n        <span>To contact, email <a class=\"mbe-footer-link\" href=\"mailto:admin@mybibleexplorer.com\">admin@mybibleexplorer.com</a></span>\n        <a class=\"mbe-footer-link\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        <span>&copy; <span data-mbe-year></span> My Bible Explorer</span>\n      </div>\n    </footer>\n    ";
+  const readerFooterMarkup = "<footer class=\"mbe-reader-footer\" data-mbe-reader-footer aria-hidden=\"true\">\n      <div class=\"mbe-reader-footer-inner\">\n        <a class=\"mbe-reader-footer-brand\" href=\"https://mybibleexplorer.com\" aria-label=\"My Bible Explorer home\"><img class=\"mbe-reader-footer-logo\" src=\"https://mybibleexplorer.com/assets/my-bible-explorer-logo.png?v=mbe-20260715-1\" alt=\"My Bible Explorer\" width=\"107\" height=\"34\"></a>\n        <span class=\"mbe-reader-footer-tagline\">Know the Word. Live the Word.</span>\n        <span class=\"mbe-reader-footer-contact\">To contact, email <a class=\"mbe-reader-footer-link\" href=\"mailto:admin@mybibleexplorer.com\">admin@mybibleexplorer.com</a></span>\n        <a class=\"mbe-reader-footer-link\" href=\"https://mybibleexplorer.com/#donate\">Support</a>\n        <span class=\"mbe-reader-footer-copy\">&copy; <span data-mbe-year></span> My Bible Explorer</span>\n      </div>\n    </footer>\n    ";
 
   function updateYear() {
     document.querySelectorAll('[data-mbe-year]').forEach((node) => {
@@ -21,7 +21,8 @@
   }
 
   function readerScrollPanes() {
-    return Array.from(document.querySelectorAll('.scripture-pane-body, .commentary-pane-body'));
+    const panes = Array.from(document.querySelectorAll('.scripture-pane, .scripture-pane-body, .commentary-pane, .commentary-pane-body'));
+    return Array.from(new Set(panes)).filter((pane) => pane.scrollHeight > pane.clientHeight + 4);
   }
 
   function readerPaneAtBottom(pane) {
@@ -115,7 +116,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-site.css?v=rvx-88';
+    const href = '/revelation-site.css?v=rvx-93';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -216,7 +217,7 @@
     return Number.isInteger(chapter) ? chapter : null;
   }
 
-  const COMMENTARY_REVISION = 'rvx-88';
+  const COMMENTARY_REVISION = 'rvx-93';
   const commentaryBundles = new Map();
   let verseCommentaryBound = false;
   let commentaryRenderToken = 0;
@@ -237,7 +238,7 @@
   function commentaryReferenceChips(references, className) {
     return (references || [])
       .map((reference) =>
-        `<button type="button" class="${className}" data-scripture-reference="${commentaryEscape(reference)}" aria-label="Show King James Version text for ${commentaryEscape(reference)}">${commentaryEscape(reference)}</button>`
+        `<span class="${className}" tabindex="0" data-scripture-reference="${commentaryEscape(reference)}" aria-label="Preview ${commentaryEscape(reference)}">${commentaryEscape(reference)}</span>`
       )
       .join('');
   }
@@ -286,7 +287,6 @@
       `<div class="exposition-card-heading"><h2>${commentaryEscape(note.reference)}</h2></div>` +
       `<div class="commentary-reading">${paragraphs}</div>` +
       commentaryStudyMarkup(note) +
-      '<div class="commentary-actions no-print"><button type="button" data-revelation-copy class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring hover:bg-muted h-8 px-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span>Copy</span></button></div>' +
       '</article>';
   }
 
@@ -362,7 +362,7 @@
   function hideScriptureReferencePreview() {
     scriptureReferencePreviewToken += 1;
     const preview = document.querySelector('[data-scripture-reference-preview]');
-    if (scriptureReferencePreviewChip?.getAttribute('aria-describedby') === preview?.id) {
+    if (scriptureReferencePreviewChip && preview && scriptureReferencePreviewChip.getAttribute('aria-describedby') === preview.id) {
       scriptureReferencePreviewChip.removeAttribute('aria-describedby');
     }
     scriptureReferencePreviewChip = null;
@@ -372,6 +372,16 @@
     window.setTimeout(() => {
       if (preview.dataset.visible !== 'true') preview.hidden = true;
     }, 140);
+  }
+
+  function enhanceScriptureReferenceChips(rootNode = document) {
+    rootNode.querySelectorAll?.('.reference-chip, .symbol-reference-chip, .word-reference-chip').forEach((chip) => {
+      const reference = chip.dataset.scriptureReference || chip.textContent.trim();
+      if (!reference) return;
+      chip.setAttribute('data-scripture-reference', reference);
+      if (!chip.hasAttribute('tabindex')) chip.setAttribute('tabindex', '0');
+      if (!chip.hasAttribute('aria-label')) chip.setAttribute('aria-label', `Preview ${reference}`);
+    });
   }
 
   async function showScriptureReferencePreview(chip) {
@@ -417,41 +427,50 @@
   }
 
   function ensureScriptureReferencePreview() {
-    if (!currentChapterNumber() || !document.body) {
-      hideScriptureReferencePreview();
-      document.querySelector('[data-scripture-reference-preview]')?.remove();
-      return;
-    }
-    scriptureReferencePreviewElement();
+    enhanceScriptureReferenceChips();
     if (scriptureReferencePreviewBound) return;
     scriptureReferencePreviewBound = true;
 
-    document.addEventListener('pointerover', (event) => {
-      if (event.pointerType && !['mouse', 'pen'].includes(event.pointerType)) return;
+    document.addEventListener('mouseover', (event) => {
       const chip = event.target.closest?.('[data-scripture-reference]');
-      if (!chip || chip.contains(event.relatedTarget)) return;
+      if (!chip) return;
       showScriptureReferencePreview(chip);
     });
-    document.addEventListener('pointerout', (event) => {
+
+    document.addEventListener('mouseout', (event) => {
       const chip = event.target.closest?.('[data-scripture-reference]');
-      if (!chip || chip.contains(event.relatedTarget)) return;
+      if (!chip) return;
+      const next = event.relatedTarget;
+      if (next instanceof Node && (chip.contains(next) || document.querySelector('[data-scripture-reference-preview]')?.contains(next))) return;
       hideScriptureReferencePreview();
     });
+
     document.addEventListener('focusin', (event) => {
       const chip = event.target.closest?.('[data-scripture-reference]');
-      if (chip) showScriptureReferencePreview(chip);
+      if (!chip) return;
+      showScriptureReferencePreview(chip);
     });
+
     document.addEventListener('focusout', (event) => {
       const chip = event.target.closest?.('[data-scripture-reference]');
-      if (chip && !chip.contains(event.relatedTarget)) hideScriptureReferencePreview();
+      if (!chip) return;
+      const next = event.relatedTarget;
+      if (next instanceof Node && chip.contains(next)) return;
+      hideScriptureReferencePreview();
     });
-    document.addEventListener('pointerdown', (event) => {
-      if (!event.target.closest?.('[data-scripture-reference]')) hideScriptureReferencePreview();
-    });
-    document.addEventListener('scroll', hideScriptureReferencePreview, true);
-    window.addEventListener('resize', hideScriptureReferencePreview, { passive: true });
-    window.addEventListener('keydown', (event) => {
+
+    document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') hideScriptureReferencePreview();
+    });
+
+    window.addEventListener('scroll', hideScriptureReferencePreview, { passive: true });
+    window.addEventListener('resize', hideScriptureReferencePreview);
+  }
+
+  function removeCommentaryActions() {
+    document.querySelectorAll('.commentary-actions, [data-revelation-copy]').forEach((node) => {
+      const actionGroup = node.closest?.('.commentary-actions');
+      (actionGroup || node).remove();
     });
   }
 
@@ -492,6 +511,7 @@
       if (!note) throw new Error(`Missing audited note for ${info.label}.`);
 
       shell.innerHTML = commentaryArticleMarkup(note);
+      enhanceScriptureReferenceChips(shell);
       shell.setAttribute('aria-live', 'polite');
       shell.removeAttribute('aria-busy');
       shell.dataset.rvxCommentaryLoading = '';
@@ -530,20 +550,6 @@
     if (!verseCommentaryBound) {
       verseCommentaryBound = true;
       document.addEventListener('click', (event) => {
-        const copyButton = event.target.closest?.('[data-revelation-copy]');
-        if (copyButton) {
-          const article = copyButton.closest('.exposition-card');
-          const text = article ? `${article.querySelector('h2')?.textContent || ''}\n\n${Array.from(article.querySelectorAll('.commentary-reading p')).map((node) => node.textContent).join('\n\n')}` : '';
-          if (text && navigator.clipboard?.writeText) {
-            navigator.clipboard.writeText(text).then(() => {
-              const label = copyButton.querySelector('span');
-              if (label) label.textContent = 'Copied';
-              window.setTimeout(() => { if (label) label.textContent = 'Copy'; }, 1400);
-            }).catch(() => {});
-          }
-          return;
-        }
-
         const button = event.target.closest?.('.scripture-card[id^="revelation-"]');
         if (!button) return;
         if (isInlineNotesViewport()) {
@@ -1436,6 +1442,7 @@
     ensureVerseCommentary();
     ensureScriptureReferencePreview();
     ensureInlineCommentaryNotes();
+    removeCommentaryActions();
     document.body.classList.add('mbe-shell-managed');
     document.querySelectorAll('.mbe-global-shell').forEach((node, index) => {
       if (index > 0 || node.getAttribute('data-tool') !== tool || !node.hasAttribute('data-embedded')) node.remove();

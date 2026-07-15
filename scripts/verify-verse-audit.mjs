@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = process.cwd();
-const revision = 'rvx-88';
+const revision = 'rvx-93';
 const expectedChapters = 22;
 const expectedVerses = 404;
 const elderReferences = new Set([

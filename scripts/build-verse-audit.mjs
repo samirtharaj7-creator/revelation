@@ -4,7 +4,7 @@ import { basename, join } from 'node:path';
 const root = process.cwd();
 const legacyPath = process.env.REVELATION_LEGACY_NOTES || '/private/tmp/revelation-legacy-notes.json';
 const sourcePath = process.env.REVELATION_SDA_TEXT || '/private/tmp/revelation-sda-commentary-clean.txt';
-const revision = 'rvx-88';
+const revision = 'rvx-93';
 const sourceTitle = 'The Seventh-day Adventist Bible Commentary, vol. 7, Revelation';
 
 const legacy = JSON.parse(readFileSync(legacyPath, 'utf8'));
