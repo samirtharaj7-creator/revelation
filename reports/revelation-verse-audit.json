@@ -1,0 +1,3507 @@
+{
+  "revision": "rvx-84",
+  "generatedAt": "2026-07-14T15:28:59.796Z",
+  "source": {
+    "title": "The Seventh-day Adventist Bible Commentary, vol. 7, Revelation",
+    "inputFile": "revelation-sda-commentary-clean.txt",
+    "method": "Every Revelation verse was mapped to its direct SDA Commentary comment or the preceding grouped comment, then screened with doctrinal quality gates."
+  },
+  "editorialDecisions": [
+    "At the user's direction, the twenty-four elders are identified definitively as angelic heavenly royal-priestly beings throughout the published commentary. Revelation 5:9 follows the preferred reading \"them\" rather than \"us.\""
+  ],
+  "totals": {
+    "chapters": 22,
+    "verses": 404,
+    "directSourceComments": 396,
+    "groupedSourceComments": 8,
+    "correctedNotes": 46
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": 20,
+      "directSourceComments": 19,
+      "groupedSourceComments": 1,
+      "correctedNotes": 2
+    },
+    {
+      "chapter": 2,
+      "verses": 29,
+      "directSourceComments": 29,
+      "groupedSourceComments": 0,
+      "correctedNotes": 10
+    },
+    {
+      "chapter": 3,
+      "verses": 22,
+      "directSourceComments": 21,
+      "groupedSourceComments": 1,
+      "correctedNotes": 10
+    },
+    {
+      "chapter": 4,
+      "verses": 11,
+      "directSourceComments": 11,
+      "groupedSourceComments": 0,
+      "correctedNotes": 3
+    },
+    {
+      "chapter": 5,
+      "verses": 14,
+      "directSourceComments": 14,
+      "groupedSourceComments": 0,
+      "correctedNotes": 8
+    },
+    {
+      "chapter": 6,
+      "verses": 17,
+      "directSourceComments": 17,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 7,
+      "verses": 17,
+      "directSourceComments": 13,
+      "groupedSourceComments": 4,
+      "correctedNotes": 2
+    },
+    {
+      "chapter": 8,
+      "verses": 13,
+      "directSourceComments": 13,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 9,
+      "verses": 21,
+      "directSourceComments": 21,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 10,
+      "verses": 11,
+      "directSourceComments": 11,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 11,
+      "verses": 19,
+      "directSourceComments": 19,
+      "groupedSourceComments": 0,
+      "correctedNotes": 2
+    },
+    {
+      "chapter": 12,
+      "verses": 17,
+      "directSourceComments": 17,
+      "groupedSourceComments": 0,
+      "correctedNotes": 0
+    },
+    {
+      "chapter": 13,
+      "verses": 18,
+      "directSourceComments": 17,
+      "groupedSourceComments": 1,
+      "correctedNotes": 0
+    },
+    {
+      "chapter": 14,
+      "verses": 20,
+      "directSourceComments": 20,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 15,
+      "verses": 8,
+      "directSourceComments": 8,
+      "groupedSourceComments": 0,
+      "correctedNotes": 0
+    },
+    {
+      "chapter": 16,
+      "verses": 21,
+      "directSourceComments": 21,
+      "groupedSourceComments": 0,
+      "correctedNotes": 0
+    },
+    {
+      "chapter": 17,
+      "verses": 18,
+      "directSourceComments": 18,
+      "groupedSourceComments": 0,
+      "correctedNotes": 0
+    },
+    {
+      "chapter": 18,
+      "verses": 24,
+      "directSourceComments": 24,
+      "groupedSourceComments": 0,
+      "correctedNotes": 0
+    },
+    {
+      "chapter": 19,
+      "verses": 21,
+      "directSourceComments": 20,
+      "groupedSourceComments": 1,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 20,
+      "verses": 15,
+      "directSourceComments": 15,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 21,
+      "verses": 27,
+      "directSourceComments": 27,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    },
+    {
+      "chapter": 22,
+      "verses": 21,
+      "directSourceComments": 21,
+      "groupedSourceComments": 0,
+      "correctedNotes": 1
+    }
+  ],
+  "verses": [
+    {
+      "reference": "Revelation 1:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:1 comment, PDF p. 13, extracted line 678",
+      "sourceHeading": "Revelation. Gr. apokalupsis, “an unveiling” (see p. 715). “The Revelation of Jesus",
+      "corrections": [
+        "Aligned the promise of nearness with the Commentary's conditional-imminence explanation."
+      ]
+    },
+    {
+      "reference": "Revelation 1:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:2 comment, PDF p. 14, extracted line 762",
+      "sourceHeading": "Bare record. Gr. martureō, “to testify,” “to witness.” The past tense shows that the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:3 comment, PDF p. 15, extracted line 788",
+      "sourceHeading": "Blessed. Gr. makarios, “happy” (see on Matt. 5:3). Some suggest that there may be",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:4 comment, PDF p. 16, extracted line 833",
+      "sourceHeading": "John. See on v. 1. The fact that the writer feels no need of further identifying",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:5 comment, PDF p. 18, extracted line 908",
+      "sourceHeading": "Jesus Christ. See on v. 1. The other members of the Godhead have already been",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:6 comment, PDF p. 18, extracted line 943",
+      "sourceHeading": "Kings and priests. Textual evidence attests (cf. p. 10) the reading “a kingdom,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:7",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:7 comment, PDF p. 19, extracted line 971",
+      "sourceHeading": "Behold, he cometh. The salutation having been concluded with v. 6, John",
+      "corrections": [
+        "Added the Commentary's special-resurrection interpretation for those who pierced Christ."
+      ]
+    },
+    {
+      "reference": "Revelation 1:8",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 1:7 comment, PDF p. 19, extracted line 971",
+      "sourceHeading": "Behold, he cometh. The salutation having been concluded with v. 6, John",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:9 comment, PDF p. 20, extracted line 1014",
+      "sourceHeading": "I John. See pp. 715–720.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:10 comment, PDF p. 21, extracted line 1058",
+      "sourceHeading": "In the Spirit. Literally, “in spirit,” here meaning “in an ecstatic state.” He became",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:11 comment, PDF p. 23, extracted line 1151",
+      "sourceHeading": "I am Alpha. See on v. 8. In view of vs. 17, 18 it is clear that in the present",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:12 comment, PDF p. 24, extracted line 1226",
+      "sourceHeading": "See the voice. That is, see who was speaking.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:13 comment, PDF p. 25, extracted line 1244",
+      "sourceHeading": "The Son of man. Gr. huios anthrōpou. The Greek here is without a definite",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:14 comment, PDF p. 25, extracted line 1276",
+      "sourceHeading": "White like wool. John grasps in vain for words with which to give an accurate",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:15 comment, PDF p. 26, extracted line 1284",
+      "sourceHeading": "Fine brass. Gr. chalkolibanos, a substance of uncertain identification. It was",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:16 comment, PDF p. 26, extracted line 1294",
+      "sourceHeading": "Right hand. Here, the hand of God represents His power to sustain.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:17 comment, PDF p. 26, extracted line 1325",
+      "sourceHeading": "As dead. The first effect upon those accorded a vision of a divine being panoplied",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:18 comment, PDF p. 27, extracted line 1342",
+      "sourceHeading": "He that liveth. Gr. ho zōn, “the living [One],” apparently from the familiar OT",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:19 comment, PDF p. 27, extracted line 1362",
+      "sourceHeading": "Write. A repetition of the command of v. 11.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 1:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 1:20 comment, PDF p. 27, extracted line 1372",
+      "sourceHeading": "Mystery. Gr. mustērion, “a secret,” “a mystery,” from a word meaning “one who",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:1 comment, PDF p. 29, extracted line 1443",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:2 comment, PDF p. 30, extracted line 1513",
+      "sourceHeading": "I know. To each of the seven churches Christ declares, “I know thy works.” His",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:3 comment, PDF p. 31, extracted line 1566",
+      "sourceHeading": "Hast borne. The Ephesian church had refused to “bear them which are evil” (see",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:4 comment, PDF p. 31, extracted line 1580",
+      "sourceHeading": "Thy first love. This “love” probably included wholehearted love for God and for",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:5 comment, PDF p. 32, extracted line 1595",
+      "sourceHeading": "Remove thy candlestick. See on ch. 1:12. The church would forfeit its status as an",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:6 comment, PDF p. 32, extracted line 1601",
+      "sourceHeading": "Nicolaitanes. One of the heretical sects that plagued the churches at Ephesus and at",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:7 comment, PDF p. 32, extracted line 1616",
+      "sourceHeading": "He that hath an ear. That is, to heed the counsel given (see on ch. 1:3; cf. on Isa.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:8 comment, PDF p. 33, extracted line 1643",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:9 comment, PDF p. 33, extracted line 1674",
+      "sourceHeading": "Thy. See on v. 2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:10 comment, PDF p. 34, extracted line 1710",
+      "sourceHeading": "Fear none. See on James 1:2; cf. John 16:33.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:11 comment, PDF p. 36, extracted line 1823",
+      "sourceHeading": "He that hath an ear. See on v. 7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:12 comment, PDF p. 36, extracted line 1830",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:13 comment, PDF p. 36, extracted line 1854",
+      "sourceHeading": "Thy works. Textual evidence favors (cf. p. 10) the omission of the words “thy",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:14 comment, PDF p. 37, extracted line 1901",
+      "sourceHeading": "Thee. For the force of the singular see on v. 2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:15 comment, PDF p. 38, extracted line 1928",
+      "sourceHeading": "Nicolaitanes. See on v. 6.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:16 comment, PDF p. 38, extracted line 1929",
+      "sourceHeading": "Repent. This sharp warning reflects the grave spiritual peril that confronted the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:17 comment, PDF p. 38, extracted line 1933",
+      "sourceHeading": "Hath an ear. See on v. 7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:18 comment, PDF p. 38, extracted line 1956",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:19",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:19 comment, PDF p. 39, extracted line 1985",
+      "sourceHeading": "Thy. For the force of the singular see on v. 2.",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:20",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:20 comment, PDF p. 39, extracted line 1998",
+      "sourceHeading": "A few things. Textual evidence favors (cf. p. 10) the omission of this phrase.",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:21 comment, PDF p. 40, extracted line 2019",
+      "sourceHeading": "Space. The offer of forgiveness was extended to the unrepentant prophetess for",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 2:22",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:22 comment, PDF p. 40, extracted line 2024",
+      "sourceHeading": "Cast her into a bed. The manner of punishment to be meted out to the false",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:23",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:23 comment, PDF p. 40, extracted line 2035",
+      "sourceHeading": "Children. The fornication of this Jezebel was habitual and of long standing, for",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:24",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:24 comment, PDF p. 40, extracted line 2048",
+      "sourceHeading": "The rest. That is, the loyal believers in Thyatira. Historically, this refers to small",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:25",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:25 comment, PDF p. 41, extracted line 2063",
+      "sourceHeading": "Till I come. The “blessed hope” (see Titus 2:13) of the soon coming of Christ has",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:26",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:26 comment, PDF p. 41, extracted line 2067",
+      "sourceHeading": "He that overcometh. See on v. 7.",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:27",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:27 comment, PDF p. 41, extracted line 2071",
+      "sourceHeading": "Rule. Gr. poimainō, literally, “to shepherd,” and thus “to rule” (see on Matt. 2:6).",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:28",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:28 comment, PDF p. 41, extracted line 2090",
+      "sourceHeading": "Morning star. That is, Christ Himself (see Rev. 22:16; cf. 2 Peter 1:19).",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 2:29",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 2:29 comment, PDF p. 41, extracted line 2091",
+      "sourceHeading": "Hath an ear. See on v. 7.",
+      "corrections": [
+        "Corrected the Thyatira period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:1 comment, PDF p. 44, extracted line 2219",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:2",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:2 comment, PDF p. 45, extracted line 2266",
+      "sourceHeading": "Be watchful. Concerning watchfulness as a Christian duty see on Matt. 24:42; cf.",
+      "corrections": [
+        "Corrected the Sardis period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:3",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:3 comment, PDF p. 45, extracted line 2276",
+      "sourceHeading": "Remember therefore. Compare ch. 2:5.",
+      "corrections": [
+        "Corrected the Sardis period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:4",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:4 comment, PDF p. 45, extracted line 2287",
+      "sourceHeading": "Names. That is, persons (see on Acts 1:15).",
+      "corrections": [
+        "Corrected the Sardis period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:5",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:5 comment, PDF p. 45, extracted line 2299",
+      "sourceHeading": "He that overcometh. See on ch. 2:7.",
+      "corrections": [
+        "Corrected the Sardis period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:6",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:6 comment, PDF p. 46, extracted line 2320",
+      "sourceHeading": "Hath an ear. See on ch. 2:7.",
+      "corrections": [
+        "Corrected the Sardis period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:7 comment, PDF p. 46, extracted line 2321",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:8 comment, PDF p. 47, extracted line 2357",
+      "sourceHeading": "Thy. For the force of the singular see on ch. 2:2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:9",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:9 comment, PDF p. 48, extracted line 2408",
+      "sourceHeading": "Make them. Literally, “give them.” Grammatically, the statement of v. 9 may be",
+      "corrections": [
+        "Corrected the Philadelphia period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:10",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:10 comment, PDF p. 48, extracted line 2440",
+      "sourceHeading": "Word of my patience. Some interpret this phrase to mean, “my word of patience,”",
+      "corrections": [
+        "Corrected the Philadelphia period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:11",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:11 comment, PDF p. 49, extracted line 2456",
+      "sourceHeading": "Crown. See on ch. 2:10.",
+      "corrections": [
+        "Corrected the Philadelphia period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:12",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:12 comment, PDF p. 49, extracted line 2457",
+      "sourceHeading": "A pillar in the temple. A metaphorical “pillar” would, of course, be part of a",
+      "corrections": [
+        "Corrected the Philadelphia period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:13",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:13 comment, PDF p. 49, extracted line 2492",
+      "sourceHeading": "Hath an ear. See on ch. 2:7.",
+      "corrections": [
+        "Corrected the Philadelphia period."
+      ]
+    },
+    {
+      "reference": "Revelation 3:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:14 comment, PDF p. 49, extracted line 2493",
+      "sourceHeading": "Angel. See on ch. 1:20.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:15 comment, PDF p. 50, extracted line 2529",
+      "sourceHeading": "Thy. For the force of the singular see on ch. 2:2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:16 comment, PDF p. 51, extracted line 2569",
+      "sourceHeading": "Neither cold nor hot. See on v. 15; cf. 1T 188; 2T 175, 176.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:17 comment, PDF p. 51, extracted line 2573",
+      "sourceHeading": "I am rich. This may be understood both literally and spiritually. Laodicea was a",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:18",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 3:17 comment, PDF p. 51, extracted line 2573",
+      "sourceHeading": "I am rich. This may be understood both literally and spiritually. Laodicea was a",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:19 comment, PDF p. 52, extracted line 2636",
+      "sourceHeading": "I love. Gr. phileō, “to love [as a friend, with all the warmth of personal",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:20 comment, PDF p. 53, extracted line 2666",
+      "sourceHeading": "I stand. The form of the Greek verb implies that Christ has taken His stand at the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:21 comment, PDF p. 54, extracted line 2687",
+      "sourceHeading": "Him that overcometh. See on ch. 2:7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 3:22",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 3:22 comment, PDF p. 54, extracted line 2694",
+      "sourceHeading": "Hath an ear. See on ch. 2:7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:1 comment, PDF p. 57, extracted line 2833",
+      "sourceHeading": "After this. That is, after John had seen the vision of chs. 1:10 to 3:22. The words",
+      "corrections": [
+        "Removed an unsupported chronological inference from the order of John's visions."
+      ]
+    },
+    {
+      "reference": "Revelation 4:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:2 comment, PDF p. 57, extracted line 2864",
+      "sourceHeading": "In the spirit. Gr. en pneumati (see on ch. 1:10). John goes into vision a second",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:3 comment, PDF p. 58, extracted line 2876",
+      "sourceHeading": "He that sat. Here again only the participle is (see on v. 2).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:4",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:4 comment, PDF p. 58, extracted line 2891",
+      "sourceHeading": "Seats. Gr. thronoi, “thrones.” The 24 elders are seen seated upon 24 thrones",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic.",
+        "Retained the site's angelic identification of the twenty-four elders and clarified their royal-priestly role."
+      ]
+    },
+    {
+      "reference": "Revelation 4:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:5 comment, PDF p. 59, extracted line 2923",
+      "sourceHeading": "Lightnings and thunderings and voices. A favorite expression with John (see chs.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:6 comment, PDF p. 59, extracted line 2934",
+      "sourceHeading": "Sea of glass. This description has much in common with Ezekiel’s vision of the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:7 comment, PDF p. 59, extracted line 2961",
+      "sourceHeading": "Lion. Here each of the four beings appears with one of the four faces that were",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:8 comment, PDF p. 60, extracted line 2965",
+      "sourceHeading": "Six wings. The cherubim of Ezekiel’s vision each had four wings (Eze. 1:6; 10:21),",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:9 comment, PDF p. 60, extracted line 2981",
+      "sourceHeading": "Those beasts. See on v. 6. The praise uttered here is antiphonal. It is initiated by",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 4:10",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:10 comment, PDF p. 60, extracted line 2990",
+      "sourceHeading": "Four and twenty elders. See on v. 4.",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic."
+      ]
+    },
+    {
+      "reference": "Revelation 4:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 4:11 comment, PDF p. 60, extracted line 2994",
+      "sourceHeading": "Worthy. God is “worthy” to receive praise from His creatures, because He has",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 5:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:1 comment, PDF p. 61, extracted line 3026",
+      "sourceHeading": "I saw. See on ch. 4:1. The setting of this chapter is the same as that of ch. 4.",
+      "corrections": [
+        "Replaced the overextended scroll definition with the Commentary's great-controversy record.",
+        "Aligned the sealed scroll symbol."
+      ]
+    },
+    {
+      "reference": "Revelation 5:2",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:2 comment, PDF p. 62, extracted line 3066",
+      "sourceHeading": "Who is worthy? The ability to open the book is not a question of strength or dignity",
+      "corrections": [
+        "Aligned the sealed scroll symbol."
+      ]
+    },
+    {
+      "reference": "Revelation 5:3",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:3 comment, PDF p. 62, extracted line 3068",
+      "sourceHeading": "No man. Gr. oudeis, “not one,” including not only men but all beings throughout",
+      "corrections": [
+        "Aligned the sealed scroll symbol."
+      ]
+    },
+    {
+      "reference": "Revelation 5:4",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:4 comment, PDF p. 62, extracted line 3073",
+      "sourceHeading": "I wept much. These words reflect John’s intense emotional reaction to the drama",
+      "corrections": [
+        "Aligned the sealed scroll symbol."
+      ]
+    },
+    {
+      "reference": "Revelation 5:5",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:5 comment, PDF p. 62, extracted line 3078",
+      "sourceHeading": "Elders. See on ch. 4:4.",
+      "corrections": [
+        "Aligned the sealed scroll symbol."
+      ]
+    },
+    {
+      "reference": "Revelation 5:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:6 comment, PDF p. 62, extracted line 3107",
+      "sourceHeading": "In the midst. This may be interpreted as meaning that the Lamb was standing",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 5:7",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:7 comment, PDF p. 63, extracted line 3145",
+      "sourceHeading": "He came and took. Literally, “he came and he has taken.” This is the focal point of",
+      "corrections": [
+        "Aligned the sealed scroll symbol."
+      ]
+    },
+    {
+      "reference": "Revelation 5:8",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:8 comment, PDF p. 64, extracted line 3157",
+      "sourceHeading": "When he had taken. This is the point at which the heavenly host responds (see on",
+      "corrections": [
+        "Retained the site's angelic identification of the twenty-four elders."
+      ]
+    },
+    {
+      "reference": "Revelation 5:9",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:9 comment, PDF p. 64, extracted line 3174",
+      "sourceHeading": "They. That is, the 24 elders and perhaps also the 4 beasts (see below on “us”).",
+      "corrections": [
+        "Applied the preferred textual reading \"them\" consistently with the elders' angelic identity."
+      ]
+    },
+    {
+      "reference": "Revelation 5:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:10 comment, PDF p. 64, extracted line 3193",
+      "sourceHeading": "Us. Textual evidence attests (cf. p. 10) the reading “them,” with reference to the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 5:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:11 comment, PDF p. 65, extracted line 3211",
+      "sourceHeading": "Many angels. In response to the testimony of the 4 beasts and the 24 elders, the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 5:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:12 comment, PDF p. 65, extracted line 3222",
+      "sourceHeading": "Worthy. See on vs. 2, 9.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 5:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:13 comment, PDF p. 65, extracted line 3231",
+      "sourceHeading": "Every creature. That is, every created being. The chorus swells, and in response",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 5:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 5:14 comment, PDF p. 66, extracted line 3258",
+      "sourceHeading": "Amen. See on Matt. 5:18. Both the antiphonal praises and the following “Amen”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:1 comment, PDF p. 66, extracted line 3285",
+      "sourceHeading": "I saw. See on ch. 4:1. The vision continues with the same setting presented in chs.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:2 comment, PDF p. 67, extracted line 3320",
+      "sourceHeading": "A white horse. The symbols of the four horses in the first four seals (vs. 2–8) have",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:3 comment, PDF p. 68, extracted line 3359",
+      "sourceHeading": "Second beast. See on ch. 4:6. In turn, each of the living creatures announces one of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:4 comment, PDF p. 68, extracted line 3362",
+      "sourceHeading": "Red. The symbolism of the second horseman well portrays conditions under which",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:5 comment, PDF p. 68, extracted line 3381",
+      "sourceHeading": "Third beast. See on chs. 4:6; 6:3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:6 comment, PDF p. 68, extracted line 3395",
+      "sourceHeading": "A measure. Gr. choinix, a measure approximately equivalent to a quart (see Vol.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:7 comment, PDF p. 69, extracted line 3422",
+      "sourceHeading": "Fourth seal. Compare on chs. 5:1; 6:1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:8 comment, PDF p. 69, extracted line 3425",
+      "sourceHeading": "Pale. The color of fear and death. With the pale horse the times of distress reach a",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:9",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:9 comment, PDF p. 69, extracted line 3446",
+      "sourceHeading": "The altar. The altar presented in the prophetic picture was probably reminiscent of",
+      "corrections": [
+        "Made explicit that the souls under the altar are pictorial, not conscious disembodied spirits."
+      ]
+    },
+    {
+      "reference": "Revelation 6:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:10 comment, PDF p. 70, extracted line 3486",
+      "sourceHeading": "They cried. That is, in the pictorial representation (see on v. 9). The “souls” are",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:11 comment, PDF p. 71, extracted line 3497",
+      "sourceHeading": "Robes. Textual evidence attests (cf. p. 10) the reading “a robe” (stolē). This is a",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:12 comment, PDF p. 71, extracted line 3525",
+      "sourceHeading": "A great earthquake. The events of the sixth seal reveal the disjointing of the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:13 comment, PDF p. 72, extracted line 3556",
+      "sourceHeading": "Stars of heaven fell. See on Matt. 24:29; cf. Isa. 34:4. See GC 333.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:14 comment, PDF p. 72, extracted line 3561",
+      "sourceHeading": "Scroll. Gr. biblion (see on ch. 5:1). The picture here is of the sky being rolled up",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:15 comment, PDF p. 72, extracted line 3570",
+      "sourceHeading": "Kings. See chs. 16:14; 17:l2. The list that follows runs the whole gamut of social",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:16 comment, PDF p. 72, extracted line 3584",
+      "sourceHeading": "Fall on us. See Hosea 10:8; Luke 23:30. To face God now is more fearful than to",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 6:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 6:17 comment, PDF p. 72, extracted line 3587",
+      "sourceHeading": "Great day. See Joel 2:11, 31; see on Isa. 13:6.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:1 comment, PDF p. 73, extracted line 3620",
+      "sourceHeading": "After. See on ch. 4:1. For the relation between ch. 7 and ch. 6 see on ch. 6:17.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:2 comment, PDF p. 74, extracted line 3653",
+      "sourceHeading": "Another angel. That is, in addition to the four holding the winds (see on v. 1).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:3 comment, PDF p. 75, extracted line 3704",
+      "sourceHeading": "Till we have sealed. See on v. 2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:4 comment, PDF p. 75, extracted line 3709",
+      "sourceHeading": "I heard. The information came to John orally. Whether at this time he saw the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:5",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 7:4 comment, PDF p. 75, extracted line 3709",
+      "sourceHeading": "I heard. The information came to John orally. Whether at this time he saw the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:6",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 7:4 comment, PDF p. 75, extracted line 3709",
+      "sourceHeading": "I heard. The information came to John orally. Whether at this time he saw the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:7",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 7:4 comment, PDF p. 75, extracted line 3709",
+      "sourceHeading": "I heard. The information came to John orally. Whether at this time he saw the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:8",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 7:4 comment, PDF p. 75, extracted line 3709",
+      "sourceHeading": "I heard. The information came to John orally. Whether at this time he saw the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:9 comment, PDF p. 76, extracted line 3778",
+      "sourceHeading": "After this. See on ch. 4:1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:10 comment, PDF p. 77, extracted line 3807",
+      "sourceHeading": "Salvation to our God. This is a recognition by the numberless multitude that God",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:11",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:11 comment, PDF p. 77, extracted line 3812",
+      "sourceHeading": "Elders. See on ch. 4:4. Although various scenes have intervened since the scene",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic."
+      ]
+    },
+    {
+      "reference": "Revelation 7:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:12 comment, PDF p. 77, extracted line 3816",
+      "sourceHeading": "Amen. See on ch. 5:14.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:13",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:13 comment, PDF p. 77, extracted line 3821",
+      "sourceHeading": "One of the elders. See on ch. 4:4.",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic."
+      ]
+    },
+    {
+      "reference": "Revelation 7:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:14 comment, PDF p. 78, extracted line 3841",
+      "sourceHeading": "Great tribulation. Literally, “the great tribulation.” Those who hold that vs. 13–",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:15 comment, PDF p. 78, extracted line 3855",
+      "sourceHeading": "Therefore. The righteous, victorious state of this blessed company makes it",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:16 comment, PDF p. 78, extracted line 3870",
+      "sourceHeading": "Hunger no more. This verse seems to allude to Isa. 49:10, where abundance was",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 7:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 7:17 comment, PDF p. 78, extracted line 3873",
+      "sourceHeading": "The Lamb. See on ch. 5:6.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:1 comment, PDF p. 79, extracted line 3911",
+      "sourceHeading": "Seventh seal. Chapter 6 portrays the opening of the first six of the seven seals.",
+      "corrections": [
+        "Preserved both Commentary interpretations of the silence and half-hour period.",
+        "Preserved both silence interpretations.",
+        "Preserved both half-hour interpretations."
+      ]
+    },
+    {
+      "reference": "Revelation 8:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:2 comment, PDF p. 80, extracted line 3937",
+      "sourceHeading": "I saw. See on ch. 4:1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:3 comment, PDF p. 80, extracted line 3944",
+      "sourceHeading": "Another angel. That is, not one of the seven angels with the trumpets.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:4 comment, PDF p. 80, extracted line 3953",
+      "sourceHeading": "Smoke of the incense. See on v. 3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:5 comment, PDF p. 80, extracted line 3954",
+      "sourceHeading": "Filled it with fire. A change suddenly comes in the scene of intercession. Once",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:6 comment, PDF p. 81, extracted line 3986",
+      "sourceHeading": "Seven angels. See on v. 2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:7 comment, PDF p. 81, extracted line 4006",
+      "sourceHeading": "Hail and fire. The picture here is that of a great storm of hail mixed with lightning,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:8 comment, PDF p. 81, extracted line 4027",
+      "sourceHeading": "As it were. John apparently finds in a burning mountain the closest representation",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:9 comment, PDF p. 82, extracted line 4053",
+      "sourceHeading": "Creatures. Gr. ktismata, “things created.” The Greek word does not necessarily",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:10 comment, PDF p. 82, extracted line 4056",
+      "sourceHeading": "Fell a great star. This has been interpreted as portraying the invasion and ravages",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:11 comment, PDF p. 82, extracted line 4082",
+      "sourceHeading": "Name. As the “name” often denotes a characteristic of that to which it is attached,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:12 comment, PDF p. 82, extracted line 4087",
+      "sourceHeading": "Third part. See on v. 7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 8:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 8:13 comment, PDF p. 83, extracted line 4099",
+      "sourceHeading": "I beheld. See on ch. 4:1. This temporary break in the sequence of the trumpets",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:1 comment, PDF p. 83, extracted line 4122",
+      "sourceHeading": "Fifth angel. The fifth trumpet is discussed in vs. 1–12. This trumpet is the first",
+      "corrections": [
+        "Qualified the star and historicist application as the Commentary does."
+      ]
+    },
+    {
+      "reference": "Revelation 9:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:2 comment, PDF p. 84, extracted line 4167",
+      "sourceHeading": "Bottomless pit. See on v. 1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:3 comment, PDF p. 84, extracted line 4172",
+      "sourceHeading": "Locusts. This visitation is reminiscent of the plague of locusts that infested Egypt",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:4 comment, PDF p. 84, extracted line 4184",
+      "sourceHeading": "They should not hurt. Locusts destroy vegetation, not men. But these locusts are",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:5 comment, PDF p. 85, extracted line 4205",
+      "sourceHeading": "Should not kill. The punishment inflicted by the locusts is pain, not death.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:6 comment, PDF p. 85, extracted line 4209",
+      "sourceHeading": "Seek death. Compare the attitude of men here with that portrayed in ch. 6:16. See",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:7 comment, PDF p. 85, extracted line 4211",
+      "sourceHeading": "Shapes. Gr. homoiōmata, “likeness.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:8 comment, PDF p. 85, extracted line 4218",
+      "sourceHeading": "Hair of women. Some have applied this feature of the vision to the allegedly long",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:9 comment, PDF p. 85, extracted line 4221",
+      "sourceHeading": "Breastplates of iron. The scales of the locusts may have suggested this description.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:10 comment, PDF p. 85, extracted line 4224",
+      "sourceHeading": "Like unto scorpions. That is, like the tails of scorpions, which contain poisonous",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:11 comment, PDF p. 85, extracted line 4228",
+      "sourceHeading": "King over them. The wise man Agur declared that “the locusts have no king, yet",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:12 comment, PDF p. 86, extracted line 4250",
+      "sourceHeading": "Woe. See on ch. 8:13.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:13 comment, PDF p. 86, extracted line 4251",
+      "sourceHeading": "Sixth angel. That is, the second woe (see on chs. 8:13; 11:14; cf. ch. 9:12).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:14 comment, PDF p. 86, extracted line 4257",
+      "sourceHeading": "Four angels. Previously the prophet had seen four angels that had power to",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:15 comment, PDF p. 86, extracted line 4285",
+      "sourceHeading": "Four angels. See on v. 14.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:16 comment, PDF p. 86, extracted line 4289",
+      "sourceHeading": "Army of the horsemen. The four angels are portrayed as wreaking their",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:17 comment, PDF p. 87, extracted line 4299",
+      "sourceHeading": "I saw. The description of the horses and their riders seems to follow the familiar",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:18 comment, PDF p. 87, extracted line 4325",
+      "sourceHeading": "These three. Textual evidence attests (cf. p. 10) the reading “these three plagues.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:19 comment, PDF p. 87, extracted line 4330",
+      "sourceHeading": "Mouth. John has already depicted these horses as killing men by the fire, smoke,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:20 comment, PDF p. 87, extracted line 4336",
+      "sourceHeading": "Rest of the men. The majority of men were not destroyed by this horrible",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 9:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 9:21 comment, PDF p. 88, extracted line 4355",
+      "sourceHeading": "Murders. The sin of idolatry against God often leads to crimes such as those here",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:1 comment, PDF p. 90, extracted line 4457",
+      "sourceHeading": "I saw. See on chs. 1:1; 4:1. Chapters 10:1 to 11:14 constitute a parenthesis between",
+      "corrections": [
+        "Changed a categorical Christ identification to the Commentary's \"may be identified\" wording.",
+        "Qualified the mighty angel identification."
+      ]
+    },
+    {
+      "reference": "Revelation 10:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:2 comment, PDF p. 90, extracted line 4479",
+      "sourceHeading": "In his hand. Compare the symbolism of Eze. 2:9.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:3 comment, PDF p. 91, extracted line 4502",
+      "sourceHeading": "Loud voice. Compare chs. 1:10; 5:2; 6:10; 7:2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:4 comment, PDF p. 91, extracted line 4507",
+      "sourceHeading": "I was about to write. John understands the voices of the seven thunders, and is",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:5 comment, PDF p. 91, extracted line 4518",
+      "sourceHeading": "Lifted up his hand. A gesture characteristic of the utterance of an oath, in ancient",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:6 comment, PDF p. 91, extracted line 4520",
+      "sourceHeading": "Liveth. Compare chs. 1:18; 4:9; 15:7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:7 comment, PDF p. 91, extracted line 4535",
+      "sourceHeading": "Days. Some commentators have taken “days” here as prophetic year-days. Whether",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:8 comment, PDF p. 92, extracted line 4556",
+      "sourceHeading": "The voice. Doubtless the voice that had forbidden John to write what had been",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:9 comment, PDF p. 92, extracted line 4564",
+      "sourceHeading": "Give me. John is placed here in the position of expressing his desire for the book.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:10 comment, PDF p. 92, extracted line 4583",
+      "sourceHeading": "I took. See on v. 10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 10:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 10:11 comment, PDF p. 93, extracted line 4595",
+      "sourceHeading": "He. Christ, the “angel” of vs. 1, 9.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:1 comment, PDF p. 93, extracted line 4619",
+      "sourceHeading": "There was given. The line of thought in ch. 10 carries into ch. 11.",
+      "corrections": [
+        "Aligned the temple with the heavenly sanctuary and the historicist post-1844 application."
+      ]
+    },
+    {
+      "reference": "Revelation 11:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:2 comment, PDF p. 94, extracted line 4652",
+      "sourceHeading": "The court. In the temple of Herod, which John had known well, there was an inner",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:3 comment, PDF p. 94, extracted line 4676",
+      "sourceHeading": "I will give power. The passage reads literally, “I will give unto my two witnesses,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:4 comment, PDF p. 95, extracted line 4700",
+      "sourceHeading": "The two olive trees. See on v. 3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:5 comment, PDF p. 95, extracted line 4703",
+      "sourceHeading": "Will hurt. That is, wishes to hurt, or is minded to hurt.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:6 comment, PDF p. 95, extracted line 4710",
+      "sourceHeading": "Power. Gr. exousia, “authority.” Exousia occurs twice in this verse and in both",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:7 comment, PDF p. 95, extracted line 4721",
+      "sourceHeading": "When they shall have finished. That is, at the end of the 1260 days (see Rev. 11:3;",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:8 comment, PDF p. 96, extracted line 4751",
+      "sourceHeading": "Bodies. Textual evidence is divided ( cf. p. 10) between this and the reading",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:9 comment, PDF p. 96, extracted line 4773",
+      "sourceHeading": "People and kindreds. Other nations. These would observe the war on the Bible in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:10 comment, PDF p. 97, extracted line 4791",
+      "sourceHeading": "Dwell upon the earth. See on ch. 3:10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:11 comment, PDF p. 97, extracted line 4800",
+      "sourceHeading": "After three days and an half. That is, at the end of the period during which the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:12 comment, PDF p. 97, extracted line 4812",
+      "sourceHeading": "Voice from heaven. The speaker is not identified, but presumably he is God.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:13 comment, PDF p. 98, extracted line 4832",
+      "sourceHeading": "Same hour. That is, almost immediately after the ascension of the witnesses.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:14 comment, PDF p. 98, extracted line 4851",
+      "sourceHeading": "The second woe. That is, the judgments under the sixth trumpet, which ended in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:15 comment, PDF p. 98, extracted line 4854",
+      "sourceHeading": "The seventh angel. This marks the beginning of the third woe (see on v. 14) and",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:16",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:16 comment, PDF p. 98, extracted line 4868",
+      "sourceHeading": "The four and twenty elders. See on ch. 4.",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic."
+      ]
+    },
+    {
+      "reference": "Revelation 11:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:17 comment, PDF p. 98, extracted line 4870",
+      "sourceHeading": "Lord God Almighty. See on ch. 1:8. A particularly fitting title for God as victor.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:18 comment, PDF p. 99, extracted line 4883",
+      "sourceHeading": "Nations were angry. Compare Ps. 2:1. Such will be the condition of the nations",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 11:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 11:19 comment, PDF p. 99, extracted line 4912",
+      "sourceHeading": "The temple. There is opened before John a view of God’s heavenly temple, with",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:1 comment, PDF p. 100, extracted line 4951",
+      "sourceHeading": "There appeared. Chapter 12 begins a new line of prophecy, which continues to the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:2 comment, PDF p. 101, extracted line 4984",
+      "sourceHeading": "With child. The church is presented at the time the Messiah is about to be born.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:3 comment, PDF p. 101, extracted line 4987",
+      "sourceHeading": "Wonder. Gr. sēmeion (see on v. 1).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:4 comment, PDF p. 102, extracted line 5024",
+      "sourceHeading": "His tail drew. Literally, “his tail is drawing.” In prophetic vision John saw the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:5 comment, PDF p. 102, extracted line 5036",
+      "sourceHeading": "A man child. Literally, “a son, a male.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:6 comment, PDF p. 102, extracted line 5044",
+      "sourceHeading": "Wilderness. Gr. erēmos, “a forsaken, desert, empty place,” “an uninhabited place.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:7 comment, PDF p. 103, extracted line 5071",
+      "sourceHeading": "And there was. Literally, “and there became.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:8 comment, PDF p. 103, extracted line 5106",
+      "sourceHeading": "Prevailed not. Inasmuch as the phrase “war in heaven” (v. 7) may have a dual",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:9 comment, PDF p. 104, extracted line 5117",
+      "sourceHeading": "The great dragon. See on v. 3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:10 comment, PDF p. 105, extracted line 5167",
+      "sourceHeading": "A loud voice. There is great rejoicing in the courts of heaven over the casting",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:11 comment, PDF p. 105, extracted line 5188",
+      "sourceHeading": "They overcame. The mind of the prophet is absorbed in contemplation of those",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:12 comment, PDF p. 106, extracted line 5201",
+      "sourceHeading": "Rejoice, ye heavens. There was rejoicing in heaven, for the angels and the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:13 comment, PDF p. 106, extracted line 5235",
+      "sourceHeading": "Woman. See on v. 1. Being now unable to attack the Son of God directly, the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:14 comment, PDF p. 106, extracted line 5239",
+      "sourceHeading": "Two wings. The figure of eagle wings was familiar to God’s ancient people. The",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:15 comment, PDF p. 107, extracted line 5246",
+      "sourceHeading": "Water as a flood. In Ps. 74:13 and Eze. 29:3 a dragon is identified as a water",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:16 comment, PDF p. 107, extracted line 5250",
+      "sourceHeading": "Earth helped the woman. Some hold that “earth” here represents areas where",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 12:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 12:17 comment, PDF p. 107, extracted line 5260",
+      "sourceHeading": "Was wroth. Or, “was enraged.” Failure to destroy the church in the wilderness",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:1 comment, PDF p. 111, extracted line 5457",
+      "sourceHeading": "And I stood. Textual evidence favors (cf. p. 10) the reading “and he stood.” If this",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:2",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 13:1 comment, PDF p. 111, extracted line 5457",
+      "sourceHeading": "And I stood. Textual evidence favors (cf. p. 10) the reading “and he stood.” If this",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:3 comment, PDF p. 113, extracted line 5520",
+      "sourceHeading": "One of his heads. See on v. 1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:4 comment, PDF p. 113, extracted line 5545",
+      "sourceHeading": "Worshipped the dragon. Worshiping the beast is in fact worshiping the dragon, for",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:5 comment, PDF p. 114, extracted line 5563",
+      "sourceHeading": "Great things. For examples of the boastful claims of the papacy see on Dan. 7:25.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:6 comment, PDF p. 114, extracted line 5576",
+      "sourceHeading": "Blaspheme his name. By assuming divine titles. For examples see on Dan. 7:25.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:7 comment, PDF p. 114, extracted line 5594",
+      "sourceHeading": "War with the saints. The language here is almost identical with that in Dan. 7:21,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:8 comment, PDF p. 114, extracted line 5602",
+      "sourceHeading": "All … shall worship him. This is especially true of the period of the revived",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:9 comment, PDF p. 115, extracted line 5620",
+      "sourceHeading": "Ear, let him hear. See on ch. 2:7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:10 comment, PDF p. 115, extracted line 5621",
+      "sourceHeading": "Leadeth into captivity. Textual evidence favors (cf. p. 10) the omission of the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:11 comment, PDF p. 115, extracted line 5643",
+      "sourceHeading": "Another beast. That is, another in addition to the one already mentioned (v. 1).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:12 comment, PDF p. 116, extracted line 5685",
+      "sourceHeading": "Power. Gr. exousia, “authority.” This verse is an amplification of the clause,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:13 comment, PDF p. 117, extracted line 5730",
+      "sourceHeading": "Wonders. Gr. sēmeia (see on ch. 12:1). This reveals the agency by which the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:14 comment, PDF p. 117, extracted line 5741",
+      "sourceHeading": "Deceiveth. Jesus warned concerning “false Christ, and false prophets” who would",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:15 comment, PDF p. 118, extracted line 5768",
+      "sourceHeading": "Life. Gr. pneuma, “spirit,” “wind,” “breath.” The symbolical image John saw in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:16 comment, PDF p. 118, extracted line 5783",
+      "sourceHeading": "Causeth all. Everyone is affected by this legislation. Apparently only the faithful",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:17 comment, PDF p. 119, extracted line 5804",
+      "sourceHeading": "Buy or sell. This stern measure will be taken in an effort to secure compliance",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 13:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 13:18 comment, PDF p. 119, extracted line 5821",
+      "sourceHeading": "Here is wisdom. Compare the phrase, “here is the mind which hath wisdom” (ch.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:1 comment, PDF p. 121, extracted line 5936",
+      "sourceHeading": "I looked. Rather, “I saw.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:2 comment, PDF p. 122, extracted line 5958",
+      "sourceHeading": "I heard a voice. Or, “I heard a sound.” Some think that the harpers and singers here",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:3",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:3 comment, PDF p. 122, extracted line 5968",
+      "sourceHeading": "Sung. Literally, “sing.” The narrative is told in the dramatic present tense (cf. on",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic."
+      ]
+    },
+    {
+      "reference": "Revelation 14:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:4 comment, PDF p. 122, extracted line 5980",
+      "sourceHeading": "Defiled. Gr. molunō, “to defile,” “to stain,” “to soil” such things as the conscience",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:5 comment, PDF p. 123, extracted line 6030",
+      "sourceHeading": "Was found. The form of the Greek verb suggests that a certain point of time is",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:6 comment, PDF p. 124, extracted line 6041",
+      "sourceHeading": "I saw. A new scene begins. Chronologically the events represented in this vision",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:7 comment, PDF p. 124, extracted line 6066",
+      "sourceHeading": "Loud voice. The message of both the first angel and the third angel are given with a",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:8 comment, PDF p. 125, extracted line 6117",
+      "sourceHeading": "Followed. Gr. akoloutheō, “to accompany,” “to follow” (see Matt. 19:27, 28; Mark",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:9 comment, PDF p. 128, extracted line 6278",
+      "sourceHeading": "Third angel. Compare vs. 6, 8.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:10 comment, PDF p. 129, extracted line 6298",
+      "sourceHeading": "Wine of the wrath. That is, wine, which is the wrath. Men who drink of the wine",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:11 comment, PDF p. 129, extracted line 6320",
+      "sourceHeading": "For ever and ever. Gr. eis aiōnas aiōnōn, literally, “unto ages of ages.” This",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:12 comment, PDF p. 130, extracted line 6359",
+      "sourceHeading": "Patience. Gr. hupomonē (see on Rom. 5:3). Here the translation “steadfast",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:13 comment, PDF p. 131, extracted line 6407",
+      "sourceHeading": "Voice. The voice is not identified, but is apparently distinguished from the voice",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:14 comment, PDF p. 131, extracted line 6412",
+      "sourceHeading": "In the Lord. Not the dead generally are here pronounced blessed, but only those who",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:15 comment, PDF p. 132, extracted line 6448",
+      "sourceHeading": "Another angel. That is, in addition to the three who delivered the messages of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:16 comment, PDF p. 132, extracted line 6462",
+      "sourceHeading": "Was reaped. This represents the gathering of the righteous (cf. Matt. 13:30; Luke",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:17 comment, PDF p. 132, extracted line 6464",
+      "sourceHeading": "Another angel. Compare v. 15.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:18 comment, PDF p. 133, extracted line 6468",
+      "sourceHeading": "Altar. Probably the altar mentioned in chs. 8:3, 5; 9:13.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:19 comment, PDF p. 133, extracted line 6477",
+      "sourceHeading": "Winepress. The figure is suitable with reference to the color of the wine, which",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 14:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 14:20 comment, PDF p. 133, extracted line 6481",
+      "sourceHeading": "Trodden. The wine press in days of old was trodden by the feet of men (see on",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:1 comment, PDF p. 134, extracted line 6542",
+      "sourceHeading": "Another. That is, with reference to the sign mentioned in ch. 12:1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:2 comment, PDF p. 134, extracted line 6553",
+      "sourceHeading": "Sea of glass. See on ch. 4:6.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:3 comment, PDF p. 135, extracted line 6578",
+      "sourceHeading": "Song of Moses. This is undoubtedly a reference to the song of deliverance after",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:4 comment, PDF p. 135, extracted line 6598",
+      "sourceHeading": "Who shall not fear thee? Compare Jer. 10:7. The message of the first angel in Rev.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:5 comment, PDF p. 135, extracted line 6610",
+      "sourceHeading": "Temple. Gr. naos (see on ch. 14:15).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:6 comment, PDF p. 136, extracted line 6617",
+      "sourceHeading": "Seven angels. See v. 1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:7 comment, PDF p. 136, extracted line 6621",
+      "sourceHeading": "Four beasts. See on ch. 4:6–8.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 15:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 15:8 comment, PDF p. 136, extracted line 6625",
+      "sourceHeading": "Filled with smoke. Compare Ex. 40:34, 35; Isa. 6:4.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:1 comment, PDF p. 136, extracted line 6641",
+      "sourceHeading": "I heard. See on ch. 1:2, 10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:2 comment, PDF p. 138, extracted line 6719",
+      "sourceHeading": "The first. The numerical designation of each angel implies that the plagues are",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:3 comment, PDF p. 138, extracted line 6735",
+      "sourceHeading": "Upon the sea. Under the third plague the “rivers and fountains of waters” are",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:4 comment, PDF p. 138, extracted line 6749",
+      "sourceHeading": "Rivers and fountains of waters. In Bible times “rivers and fountains of waters”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:5 comment, PDF p. 139, extracted line 6756",
+      "sourceHeading": "I heard. See on ch. 1:2, 10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:6 comment, PDF p. 139, extracted line 6773",
+      "sourceHeading": "They have shed. Literally, they have poured out. This doubtless includes the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:7 comment, PDF p. 139, extracted line 6783",
+      "sourceHeading": "I heard. See on ch. 1:2, 10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:8 comment, PDF p. 140, extracted line 6800",
+      "sourceHeading": "Upon the sun. According to the Greek the first three plagues are poured out into",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:9 comment, PDF p. 140, extracted line 6821",
+      "sourceHeading": "Blasphemed. Gr. blasphemeō (see on ch. 13:1). Here, to blaspheme God is to",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:10 comment, PDF p. 140, extracted line 6838",
+      "sourceHeading": "Seat. Gr. thronos, throne (see on ch. 13:2). The seat of the beast is apparently his",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:11 comment, PDF p. 141, extracted line 6857",
+      "sourceHeading": "Blasphemed. Men confirm their perverse hatred of God. Their attitude under the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:12 comment, PDF p. 141, extracted line 6865",
+      "sourceHeading": "The sixth angel. Generally speaking, Adventist expositors have set forth one or",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:13 comment, PDF p. 143, extracted line 6970",
+      "sourceHeading": "I saw. See on ch. 1:1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:14 comment, PDF p. 144, extracted line 6993",
+      "sourceHeading": "Spirits of devils. Literally, “spirits of demons,” or “demonic spirits.” In the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:15 comment, PDF p. 144, extracted line 7027",
+      "sourceHeading": "Behold. Or, “See”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:16 comment, PDF p. 145, extracted line 7042",
+      "sourceHeading": "He gathered. Or, “they gathered.” The Greek may be translated either way. The",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:17 comment, PDF p. 146, extracted line 7101",
+      "sourceHeading": "Seventh angel. Concerning the significance of the number seven in the Revelation",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:18 comment, PDF p. 147, extracted line 7126",
+      "sourceHeading": "Voices. Or, “sounds,” “noises.” Compare chs. 4:5; 8:5; 11:19. What the “voices”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:19 comment, PDF p. 147, extracted line 7137",
+      "sourceHeading": "The great city. That is, mystical Babylon (see on chs. 17:5, 18; 18:10).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:20 comment, PDF p. 148, extracted line 7178",
+      "sourceHeading": "Every island. The convulsions of earth here described result from the earthquake",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 16:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 16:21 comment, PDF p. 148, extracted line 7181",
+      "sourceHeading": "Great hail. Or, “great hailstones.” For comment on the plague of hail on the land",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:1 comment, PDF p. 148, extracted line 7214",
+      "sourceHeading": "One of the seven angels. See on ch. 1:11; cf. ch. 21:9. The identification of this",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:2 comment, PDF p. 150, extracted line 7265",
+      "sourceHeading": "Kings of the earth. That is, the political powers of earth (see on v. 12), which place",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:3 comment, PDF p. 150, extracted line 7291",
+      "sourceHeading": "Carried me away. The sensation of motion was doubtless designed to aid John in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:4 comment, PDF p. 151, extracted line 7347",
+      "sourceHeading": "The woman. See on v. 3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:5 comment, PDF p. 152, extracted line 7359",
+      "sourceHeading": "Forehead. The character reflected by the name “Babylon” is the woman’s",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:6 comment, PDF p. 152, extracted line 7383",
+      "sourceHeading": "Drunken. See on v. 2. Literally, “continuing in a state of intoxication.” In a general",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:7 comment, PDF p. 153, extracted line 7428",
+      "sourceHeading": "I will tell thee. In the Greek the pronoun is emphatic: “I myself will tell thee.” The",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:8 comment, PDF p. 153, extracted line 7431",
+      "sourceHeading": "The beast that thou sawest. That is, the beast of v. 3. John was not shown the beast",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:9 comment, PDF p. 155, extracted line 7514",
+      "sourceHeading": "The mind which hath wisdom. Compare ch. 13:18. The angel thus introduces his",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:10 comment, PDF p. 156, extracted line 7575",
+      "sourceHeading": "And there are seven kings. Or, “and seven kings are they.” These “kings” are not",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:11 comment, PDF p. 157, extracted line 7611",
+      "sourceHeading": "The beast that was. See on v. 8.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:12 comment, PDF p. 157, extracted line 7625",
+      "sourceHeading": "Ten horns. Compare Dan. 7:24; Rev. 12:3; 13:1; see on Dan. 7:7; Rev. 12:3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:13 comment, PDF p. 158, extracted line 7659",
+      "sourceHeading": "Mind. Gr. gn̄omē, “opinion,” “intention,” “purpose,” “resolve,” “decree.” In v. 17",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:14 comment, PDF p. 159, extracted line 7682",
+      "sourceHeading": "Make war. That is, join battle. With the world united (see on chs. 16:12–16;",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:15 comment, PDF p. 159, extracted line 7710",
+      "sourceHeading": "He saith unto me. See on ch. 17:1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:16 comment, PDF p. 159, extracted line 7715",
+      "sourceHeading": "The ten horns. See on v. 12.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:17 comment, PDF p. 160, extracted line 7741",
+      "sourceHeading": "God hath put. The “ten horns” and the “beast” (see on v. 16) are authorized by",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 17:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 17:18 comment, PDF p. 160, extracted line 7766",
+      "sourceHeading": "The woman. See on v. 3.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:1 comment, PDF p. 161, extracted line 7789",
+      "sourceHeading": "After these things. This refers to the sequence in which chs. 17 and 18 were",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:2 comment, PDF p. 161, extracted line 7806",
+      "sourceHeading": "Cried mightily. In order that all might hear. The message of ch. 18 is to be",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:3 comment, PDF p. 162, extracted line 7827",
+      "sourceHeading": "All nations. See on ch. 17:2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:4 comment, PDF p. 162, extracted line 7840",
+      "sourceHeading": "Another voice. That is, as the Greek implies, another angelic voice.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:5 comment, PDF p. 163, extracted line 7868",
+      "sourceHeading": "Her sins. See on Rev. 18:4; cf. Jer. 50:14.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:6 comment, PDF p. 163, extracted line 7884",
+      "sourceHeading": "Reward her. Literally, “give her to the limit.” The harlot, that is, the apostate",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:7 comment, PDF p. 163, extracted line 7900",
+      "sourceHeading": "How much. Measure for measure, the punishment will fit the crime. Her suffering",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:8 comment, PDF p. 164, extracted line 7929",
+      "sourceHeading": "Therefore. That is, because of her haughty boasting, proud self-exaltation,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:9 comment, PDF p. 165, extracted line 7961",
+      "sourceHeading": "Kings of the earth. See on chs. 16:14, 16; 17:2, 12–14.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:10 comment, PDF p. 165, extracted line 7982",
+      "sourceHeading": "Afar off. Doubtless in the realization that, but recently, they had collaborated with",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:11 comment, PDF p. 165, extracted line 8001",
+      "sourceHeading": "Merchants. According to one interpretation, these “merchants” are the literal",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:12 comment, PDF p. 166, extracted line 8021",
+      "sourceHeading": "Merchandise of gold. Attempts to classify the 28 items of trade listed in vs. 12,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:13 comment, PDF p. 166, extracted line 8030",
+      "sourceHeading": "Odours. Rather, “incense.” Textual evidence favors (cf. p. 10) the addition of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:14 comment, PDF p. 167, extracted line 8051",
+      "sourceHeading": "Fruits. Gr. apōra, “fruits,” or more specifically, “the season of ripe fruits,” in late",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:15 comment, PDF p. 167, extracted line 8064",
+      "sourceHeading": "Merchants. See on v. 11.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:16 comment, PDF p. 167, extracted line 8070",
+      "sourceHeading": "Alas, alas. See on v. 10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:17 comment, PDF p. 167, extracted line 8076",
+      "sourceHeading": "One hour. See on chs. 17:12; 18:8.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:18 comment, PDF p. 167, extracted line 8092",
+      "sourceHeading": "Cried. Or, “cried out,” or “continued to shout.” There was a veritable babel of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:19 comment, PDF p. 168, extracted line 8099",
+      "sourceHeading": "Cast dust. A sign of extreme shame or grief, here the latter (see on v. 9). Compare",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:20 comment, PDF p. 168, extracted line 8112",
+      "sourceHeading": "Rejoice. Or, “keep on exulting.” The summary desolation of Babylon brings",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:21 comment, PDF p. 168, extracted line 8129",
+      "sourceHeading": "A mighty angel. Literally, “one strong angel.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:22",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:22 comment, PDF p. 169, extracted line 8145",
+      "sourceHeading": "Voice. Or, “sound.” Verses 22, 23 constitute a vivid and highly figurative",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:23",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:23 comment, PDF p. 169, extracted line 8156",
+      "sourceHeading": "Candle. Literally, “lamp” (see on ch. 1:12). The utter blackness of night vividly",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 18:24",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 18:24 comment, PDF p. 169, extracted line 8163",
+      "sourceHeading": "Blood. See on chs. 16:6; 17:6.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:1 comment, PDF p. 179, extracted line 8884",
+      "sourceHeading": "After these things. That is, after witnessing the scenes of chs. 17 and 18 (see on ch.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:2 comment, PDF p. 180, extracted line 8929",
+      "sourceHeading": "For. Verse 2 accounts for the ascription of praise in v. 1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:3 comment, PDF p. 180, extracted line 8944",
+      "sourceHeading": "Her smoke rose up. See on ch. 18:8, 9.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:4",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:4 comment, PDF p. 180, extracted line 8946",
+      "sourceHeading": "Elders. See on ch. 4:4.",
+      "corrections": [
+        "Kept the twenty-four elders definitively angelic."
+      ]
+    },
+    {
+      "reference": "Revelation 19:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:5 comment, PDF p. 180, extracted line 8951",
+      "sourceHeading": "Out of the throne. This was either the voice of God Himself or that of one",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:6 comment, PDF p. 180, extracted line 8959",
+      "sourceHeading": "I heard. Compare on ch. 1:2.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:7 comment, PDF p. 181, extracted line 8971",
+      "sourceHeading": "Be glad. The inward experience of the heart.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:8 comment, PDF p. 181, extracted line 8993",
+      "sourceHeading": "To her was granted. John has set forth the New Jerusalem symbolically as the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:9",
+      "status": "aligned",
+      "sourceBasis": "grouped-with-preceding-comment",
+      "sourceLocator": "Revelation 19:8 comment, PDF p. 181, extracted line 8993",
+      "sourceHeading": "To her was granted. John has set forth the New Jerusalem symbolically as the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:10 comment, PDF p. 182, extracted line 9019",
+      "sourceHeading": "Fell. A typical Oriental gesture of reverence and worship. Here it is an expression",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:11 comment, PDF p. 182, extracted line 9039",
+      "sourceHeading": "Opened. Literally, “standing open.” Heaven was open when John’s attention was",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:12 comment, PDF p. 183, extracted line 9087",
+      "sourceHeading": "His eyes. See on ch. 1:14. As Christ goes forth, the great champion of eternal",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:13 comment, PDF p. 183, extracted line 9094",
+      "sourceHeading": "Vesture. Gr. himation (see on Matt. 5:40), here perhaps a rider’s coat, or the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:14 comment, PDF p. 184, extracted line 9109",
+      "sourceHeading": "Armies. That is, the angelic hosts that accompany Christ at His second advent",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:15 comment, PDF p. 184, extracted line 9111",
+      "sourceHeading": "Out of his mouth. The sword is obviously figurative. By the word of the Lord the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:16 comment, PDF p. 184, extracted line 9135",
+      "sourceHeading": "Vesture. See on v. 13.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:17 comment, PDF p. 184, extracted line 9140",
+      "sourceHeading": "Standing in the sun. Perhaps the blinding light of the sun is here descriptive of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:18 comment, PDF p. 185, extracted line 9156",
+      "sourceHeading": "Flesh. Literally, “flesh pieces” (cf. on ch. 17:16).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:19 comment, PDF p. 185, extracted line 9166",
+      "sourceHeading": "The beast. See on ch. 17:3, 8, 11.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:20 comment, PDF p. 185, extracted line 9175",
+      "sourceHeading": "The beast. See on ch. 17:3, 8.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 19:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 19:21 comment, PDF p. 186, extracted line 9202",
+      "sourceHeading": "The remnant. Or, “the rest,” that is, all of earth’s inhabitants except the redeemed",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:1 comment, PDF p. 188, extracted line 9302",
+      "sourceHeading": "I saw. The events described in ch. 20 follow immediately upon those portrayed in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:2 comment, PDF p. 189, extracted line 9373",
+      "sourceHeading": "Laid hold. Gr. krateō, “to seize,” “to hold fast.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:3 comment, PDF p. 190, extracted line 9389",
+      "sourceHeading": "Bottomless pit. See on v. 1.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:4 comment, PDF p. 190, extracted line 9408",
+      "sourceHeading": "Thrones. Symbols of authority to exercise rule as a king (ch. 13:2), or as a judge",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:5 comment, PDF p. 191, extracted line 9462",
+      "sourceHeading": "Rest of the dead. This obviously refers to the wicked dead, those who from the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:6 comment, PDF p. 192, extracted line 9486",
+      "sourceHeading": "Blessed. Gr. makarios (see on Matt. 5:3).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:7 comment, PDF p. 192, extracted line 9502",
+      "sourceHeading": "Loosed. The confinement resulted from the removal of the righteous to heaven and",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:8 comment, PDF p. 192, extracted line 9510",
+      "sourceHeading": "Nations … Gog and Magog. These terms represent the hosts of the unsaved of all",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:9 comment, PDF p. 192, extracted line 9519",
+      "sourceHeading": "Breadth of the earth. Compare a similar expression in Hab. 1:6. The wicked, under",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:10",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:10 comment, PDF p. 193, extracted line 9539",
+      "sourceHeading": "Lake of fire. See on ch. 19:20. Here the lake of fire is the surface of the earth",
+      "corrections": [
+        "Clarified final annihilation and rejected endless conscious torment."
+      ]
+    },
+    {
+      "reference": "Revelation 20:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:11 comment, PDF p. 193, extracted line 9547",
+      "sourceHeading": "Throne. A symbol of authority, in this case authority to carry out a judgment. The",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:12 comment, PDF p. 193, extracted line 9564",
+      "sourceHeading": "The dead. This obviously refers to those raised in the second resurrection (see on",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:13 comment, PDF p. 194, extracted line 9579",
+      "sourceHeading": "Sea … death … hell. These words set forth the universality of the second",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:14 comment, PDF p. 194, extracted line 9583",
+      "sourceHeading": "Death and hell. Death and hell are here personified. Their being cast into the lake",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 20:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 20:15 comment, PDF p. 194, extracted line 9589",
+      "sourceHeading": "Whosoever. Only the names of the faithful will be retained in the book of life.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:1",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:1 comment, PDF p. 200, extracted line 9858",
+      "sourceHeading": "New. Gr. kainos, “new” in quality as opposed to that which is worn or marred.",
+      "corrections": [
+        "Restored the plain reading of no more sea.",
+        "Restored the Commentary's plain reading of \"no more sea.\""
+      ]
+    },
+    {
+      "reference": "Revelation 21:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:2 comment, PDF p. 200, extracted line 9874",
+      "sourceHeading": "Holy city. Ancient Jerusalem contained the Temple, where God could manifest His",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:3 comment, PDF p. 200, extracted line 9894",
+      "sourceHeading": "Great voice. The speaker is not identified. It is presumably not God, for He is",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:4 comment, PDF p. 201, extracted line 9909",
+      "sourceHeading": "All tears. Literally, “every tear.” See on Rev. 7:17; cf. Isa. 25:8; 65:19.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:5 comment, PDF p. 201, extracted line 9925",
+      "sourceHeading": "He that sat. Or, “the one sitting.” He is not identified (cf. on ch. 20:11). In ch. 4:2",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:6",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:6 comment, PDF p. 201, extracted line 9936",
+      "sourceHeading": "It is done. Rather, “It has come to pass.” Textual evidence may be cited (cf. p. 10)",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:7 comment, PDF p. 202, extracted line 9952",
+      "sourceHeading": "Overcometh. That is, according to the Greek, continually conquers, or habitually",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:8 comment, PDF p. 202, extracted line 9963",
+      "sourceHeading": "But. A strong contrast is now presented.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:9 comment, PDF p. 203, extracted line 9987",
+      "sourceHeading": "One of the seven angels. One of the plague-bearing angels had already shown John",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:10 comment, PDF p. 203, extracted line 9997",
+      "sourceHeading": "In the spirit. That is, in a trance, in vision (see on ch. 1:10). The carrying away",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:11 comment, PDF p. 203, extracted line 10002",
+      "sourceHeading": "Glory of God. This probably refers to the abiding presence of God with His",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:12 comment, PDF p. 203, extracted line 10012",
+      "sourceHeading": "Wall great and high. Such walls were built around ancient cities for protection",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:13 comment, PDF p. 203, extracted line 10024",
+      "sourceHeading": "On the east three gates. Ezekiel’s enumeration is in the order, north, east, south,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:14 comment, PDF p. 203, extracted line 10027",
+      "sourceHeading": "Twelve foundations. The number “twelve” is given five times in vs. 12–14. For",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:15 comment, PDF p. 204, extracted line 10032",
+      "sourceHeading": "Reed. Compare Eze. 40:3; Rev. 11:1. Here the act of measuring and the stating of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:16 comment, PDF p. 204, extracted line 10035",
+      "sourceHeading": "Foursquare. There is beauty inherent in right proportion, perfect balance, and",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:17 comment, PDF p. 204, extracted line 10068",
+      "sourceHeading": "Measured the wall. On the basis of the NT cubit, which was about 17 1/2 in.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:18 comment, PDF p. 205, extracted line 10079",
+      "sourceHeading": "Building. Gr. endomēsis, “a building in,” from dōmaō, “to build.” The word",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:19 comment, PDF p. 205, extracted line 10086",
+      "sourceHeading": "Garnished. Gr. kosmeō, “to adorn” (cf. on v. 2).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:20 comment, PDF p. 205, extracted line 10098",
+      "sourceHeading": "Sardonyx. Perhaps an onyx with red and brown layers against a white",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:21 comment, PDF p. 205, extracted line 10113",
+      "sourceHeading": "One pearl. The size of the gems listed is beyond human comprehension.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:22",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:22 comment, PDF p. 205, extracted line 10114",
+      "sourceHeading": "Temple. Gr. naos, the word for the sanctuary is confined to the holy and most",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:23",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:23 comment, PDF p. 206, extracted line 10122",
+      "sourceHeading": "No need. Light-giving bodies will not be imperative for the illumination of the",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:24",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:24 comment, PDF p. 206, extracted line 10127",
+      "sourceHeading": "Nations. A description of the redeemed from “all nations, and kindreds, and",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:25",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:25 comment, PDF p. 206, extracted line 10130",
+      "sourceHeading": "No night. Doubtless because of the circumstances mentioned in v. 23 (cf. on",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:26",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:26 comment, PDF p. 206, extracted line 10132",
+      "sourceHeading": "Of the nations. Compare v. 24.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 21:27",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 21:27 comment, PDF p. 206, extracted line 10133",
+      "sourceHeading": "Any thing that defileth. Doubtless an allusion to Isa. 52:1. Much of the imagery",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:1",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:1 comment, PDF p. 207, extracted line 10172",
+      "sourceHeading": "Pure river. The angel had shown John the exterior of the city (ch. 21:10), and now",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:2",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:2 comment, PDF p. 207, extracted line 10178",
+      "sourceHeading": "Tree of life. Compare Ezekiel’s “many trees” (see on Eze. 47:7, 12). For the tree in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:3",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:3 comment, PDF p. 207, extracted line 10189",
+      "sourceHeading": "Curse. Gr. katathēma, “the thing [or “person”] cursed.” The word is probably to",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:4",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:4 comment, PDF p. 207, extracted line 10197",
+      "sourceHeading": "See his face. An expression denoting intimate relations with another person, and",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:5",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:5 comment, PDF p. 207, extracted line 10203",
+      "sourceHeading": "No night. This verse draws a word picture emphasizing the insignificance of",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:6",
+      "status": "corrected-and-aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:6 comment, PDF p. 208, extracted line 10220",
+      "sourceHeading": "Faithful and true. A statement of the trustworthiness and genuineness of God’s",
+      "corrections": [
+        "Aligned \"shortly\" with the opening chapter's conditional-imminence explanation."
+      ]
+    },
+    {
+      "reference": "Revelation 22:7",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:7 comment, PDF p. 208, extracted line 10228",
+      "sourceHeading": "Quickly. The angel is quoting Jesus. The reference is to the second coming. See on",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:8",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:8 comment, PDF p. 208, extracted line 10233",
+      "sourceHeading": "Saw. The passage reads literally, “I John, the one seeing these things and hearing.”",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:9",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:9 comment, PDF p. 208, extracted line 10238",
+      "sourceHeading": "Fellowservant. See on ch. 19:10.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:10",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:10 comment, PDF p. 208, extracted line 10243",
+      "sourceHeading": "Seal not. This is opposite to the command given Daniel concerning his book (see",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:11",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:11 comment, PDF p. 208, extracted line 10249",
+      "sourceHeading": "Unjust. The verse reads literally, “The one doing unrighteousness, let him do",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:12",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:12 comment, PDF p. 209, extracted line 10261",
+      "sourceHeading": "I come quickly. See on v. 7.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:13",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:13 comment, PDF p. 209, extracted line 10269",
+      "sourceHeading": "Alpha and Omega. These are the first and last letters of the Greek alphabet, used",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:14",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:14 comment, PDF p. 209, extracted line 10277",
+      "sourceHeading": "Blessed. Another blessing upon the faithful (see on v. 7).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:15",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:15 comment, PDF p. 210, extracted line 10316",
+      "sourceHeading": "Dogs. A figure for a vile, shameless person (see on Phil. 3:2).",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:16",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:16 comment, PDF p. 210, extracted line 10318",
+      "sourceHeading": "I Jesus. Jesus authenticates the revelations recorded in the Apocalypse. See on ch.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:17",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:17 comment, PDF p. 210, extracted line 10326",
+      "sourceHeading": "Spirit. The Holy Spirit, the one who energizes the Christian life of the believers,",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:18",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:18 comment, PDF p. 211, extracted line 10354",
+      "sourceHeading": "I testify. The speaker is Jesus (see v. 20). His testimony must be accepted.",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:19",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:19 comment, PDF p. 211, extracted line 10369",
+      "sourceHeading": "Take away from. The one who takes away from the words of the Revelation is",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:20",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:20 comment, PDF p. 211, extracted line 10376",
+      "sourceHeading": "He which testifieth. That is, Christ. The specific reference is to the testimony in",
+      "corrections": []
+    },
+    {
+      "reference": "Revelation 22:21",
+      "status": "aligned",
+      "sourceBasis": "direct",
+      "sourceLocator": "Revelation 22:21 comment, PDF p. 212, extracted line 10397",
+      "sourceHeading": "The grace. This verse is a benediction, deep from the heart of the apostle,",
+      "corrections": []
+    }
+  ]
+}

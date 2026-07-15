@@ -2,7 +2,7 @@ import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const root = process.cwd();
-const cacheToken = 'rvx-79';
+const cacheToken = 'rvx-84';
 const heroVersion = '4';
 
 const summaries = {

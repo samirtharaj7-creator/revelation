@@ -1592,6 +1592,155 @@ html.dark .bg-background {
   background: rgba(201, 164, 76, .10) !important;
 }
 
+.reference-chip,
+.symbol-reference-chip,
+.word-reference-chip {
+  appearance: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 2rem !important;
+  margin: 0 !important;
+  padding: .35rem .75rem !important;
+  border: 1px solid rgba(216, 184, 102, .38) !important;
+  border-radius: 999px !important;
+  background: rgba(216, 184, 102, .08) !important;
+  color: #d8b866 !important;
+  font-size: .875rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.25rem !important;
+  text-align: left !important;
+  cursor: help !important;
+  transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease !important;
+}
+
+.reference-chip:hover,
+.symbol-reference-chip:hover,
+.word-reference-chip:hover,
+.reference-chip:focus-visible,
+.symbol-reference-chip:focus-visible,
+.word-reference-chip:focus-visible {
+  border-color: rgba(216, 184, 102, .8) !important;
+  background: rgba(216, 184, 102, .16) !important;
+  color: #f3e8cc !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(216, 184, 102, .16) !important;
+}
+
+.scripture-reference-preview {
+  position: fixed !important;
+  z-index: 220 !important;
+  width: min(28rem, calc(100vw - 2rem)) !important;
+  max-height: calc(100vh - 2rem) !important;
+  overflow: hidden !important;
+  padding: 1rem !important;
+  border: 1px solid rgba(216, 184, 102, .48) !important;
+  border-left: 3px solid #d8b866 !important;
+  border-radius: 6px !important;
+  background: rgba(8, 29, 52, .98) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .38) !important;
+  color: #eee2c6 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(4px) !important;
+  transition: opacity 120ms ease, transform 120ms ease !important;
+}
+
+.scripture-reference-preview[data-visible="true"] {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.scripture-reference-preview-heading {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: .75rem !important;
+  margin: 0 0 .75rem !important;
+  padding-bottom: .65rem !important;
+  border-bottom: 1px solid rgba(216, 184, 102, .22) !important;
+  color: #f3e8cc !important;
+  font-family: var(--mbe-font-display) !important;
+  font-size: .875rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.scripture-reference-preview-version {
+  flex: 0 0 auto !important;
+  padding: .2rem .45rem !important;
+  border-radius: 3px !important;
+  background: #d8b866 !important;
+  color: #081d34 !important;
+  font-family: var(--mbe-font-ui) !important;
+  font-size: .65rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .08em !important;
+  line-height: 1rem !important;
+}
+
+.scripture-reference-preview-verses {
+  display: grid !important;
+  gap: .75rem !important;
+}
+
+.scripture-reference-preview-verse {
+  display: grid !important;
+  gap: .25rem !important;
+  margin: 0 !important;
+}
+
+.scripture-reference-preview-verse-label {
+  color: #d8b866 !important;
+  font-family: var(--mbe-font-ui) !important;
+  font-size: .75rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .04em !important;
+  line-height: 1rem !important;
+}
+
+.scripture-reference-preview-verse-copy {
+  color: #eee2c6 !important;
+  font-family: var(--mbe-font-reading) !important;
+  font-size: 1.125rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.45 !important;
+}
+
+.scripture-reference-preview-note {
+  margin: .75rem 0 0 !important;
+  padding-top: .65rem !important;
+  border-top: 1px solid rgba(216, 184, 102, .16) !important;
+  color: #b9ae96 !important;
+  font-family: var(--mbe-font-ui) !important;
+  font-size: .75rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1rem !important;
+}
+
+@media (max-width: 639.98px) {
+  .scripture-reference-preview {
+    width: calc(100vw - 1.5rem) !important;
+    padding: .9rem !important;
+  }
+
+  .scripture-reference-preview-verse-copy {
+    font-size: 1rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reference-chip,
+  .symbol-reference-chip,
+  .word-reference-chip,
+  .scripture-reference-preview {
+    transition: none !important;
+  }
+}
+
 .revelation-inline-note {
   display: none !important;
 }

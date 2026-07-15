@@ -115,7 +115,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-site.css?v=rvx-79';
+    const href = '/revelation-site.css?v=rvx-84';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');
@@ -214,6 +214,341 @@
     if (!match) return null;
     const chapter = Number(match[1]);
     return Number.isInteger(chapter) ? chapter : null;
+  }
+
+  const COMMENTARY_REVISION = 'rvx-84';
+  const commentaryBundles = new Map();
+  let verseCommentaryBound = false;
+  let commentaryRenderToken = 0;
+  let scriptureReferencePreviewBound = false;
+  let scriptureReferencePreviewRequest = null;
+  let scriptureReferencePreviewToken = 0;
+  let scriptureReferencePreviewChip = null;
+
+  function commentaryEscape(value) {
+    return String(value ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function commentaryReferenceChips(references, className) {
+    return (references || [])
+      .map((reference) =>
+        `<button type="button" class="${className}" data-scripture-reference="${commentaryEscape(reference)}" aria-label="Show King James Version text for ${commentaryEscape(reference)}">${commentaryEscape(reference)}</button>`
+      )
+      .join('');
+  }
+
+  function commentarySymbolMarkup(symbol) {
+    const references = commentaryReferenceChips(symbol.scriptureReferences, 'symbol-reference-chip');
+    return '<article class="symbol-note">' +
+      '<div class="symbol-note-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>' + commentaryEscape(symbol.symbol) + '</div>' +
+      `<p>${commentaryEscape(symbol.meaning)}</p>` +
+      (references ? `<div class="symbol-reference-list" aria-label="${commentaryEscape(symbol.symbol)} Scripture references">${references}</div>` : '') +
+      '</article>';
+  }
+
+  function commentaryWordMarkup(wordNote) {
+    const references = commentaryReferenceChips(wordNote.scriptureReferences, 'word-reference-chip');
+    return '<article class="word-note">' +
+      `<div class="word-note-title">${commentaryEscape(wordNote.term)}</div>` +
+      `<p>${commentaryEscape(wordNote.explanation)}</p>` +
+      (references ? `<div class="word-reference-list" aria-label="${commentaryEscape(wordNote.term)} Scripture references">${references}</div>` : '') +
+      '</article>';
+  }
+
+  function commentaryStudyMarkup(note) {
+    const crossReferences = commentaryReferenceChips(note.crossReferences, 'reference-chip');
+    const symbols = (note.symbols || []).map(commentarySymbolMarkup).join('');
+    const wordNotes = (note.wordNotes || []).map(commentaryWordMarkup).join('');
+    return '<section class="verse-study-card" aria-label="Cross references, symbols, and word notes">' +
+      '<div class="verse-study-card-header"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library h-4 w-4" aria-hidden="true"><path d="m16 6 4 14"></path><path d="M12 6v14"></path><path d="M8 8v12"></path><path d="M4 4v16"></path></svg>Study Links</div>' +
+      '<div class="verse-study-grid">' +
+      '<div class="study-card-section"><h3>Cross References</h3>' +
+      (crossReferences ? `<div class="reference-chip-list">${crossReferences}</div>` : '<p class="study-card-empty">No verse-specific cross references added yet.</p>') +
+      '</div>' +
+      '<div class="study-card-section"><h3>Symbols</h3>' +
+      (symbols ? `<div class="symbol-note-list">${symbols}</div>` : '<p class="study-card-empty">No verse-specific symbols added yet.</p>') +
+      '</div>' +
+      '<div class="study-card-section study-card-section-wide"><h3>Word / Phrase Notes</h3>' +
+      (wordNotes ? `<div class="word-note-list">${wordNotes}</div>` : '<p class="study-card-empty">No verse-specific word notes added yet.</p>') +
+      '</div></div></section>';
+  }
+
+  function commentaryArticleMarkup(note) {
+    const paragraphs = (note.paragraphs || [])
+      .map((paragraph) => `<p>${commentaryEscape(paragraph)}</p>`)
+      .join('');
+    return `<article class="exposition-card" data-rvx-commentary="${commentaryEscape(note.id)}" data-audit-status="${commentaryEscape(note.audit?.status || 'aligned')}">` +
+      `<div class="exposition-card-heading"><h2>${commentaryEscape(note.reference)}</h2></div>` +
+      `<div class="commentary-reading">${paragraphs}</div>` +
+      commentaryStudyMarkup(note) +
+      '<div class="commentary-actions no-print"><button type="button" data-revelation-copy class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring hover:bg-muted h-8 px-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy h-4 w-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg><span>Copy</span></button></div>' +
+      '</article>';
+  }
+
+  function loadCommentaryBundle(chapter) {
+    if (commentaryBundles.has(chapter)) return commentaryBundles.get(chapter);
+    const request = fetch(`/assets/commentary/revelation-${chapter}.json?v=${COMMENTARY_REVISION}`)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Unable to load Revelation ${chapter} commentary (${response.status}).`);
+        return response.json();
+      })
+      .then((bundle) => {
+        if (bundle.chapter !== chapter || !Array.isArray(bundle.notes)) {
+          throw new Error(`Invalid Revelation ${chapter} commentary bundle.`);
+        }
+        return bundle;
+      })
+      .catch((error) => {
+        commentaryBundles.delete(chapter);
+        throw error;
+      });
+    commentaryBundles.set(chapter, request);
+    return request;
+  }
+
+  function loadScriptureReferencePreviews() {
+    if (scriptureReferencePreviewRequest) return scriptureReferencePreviewRequest;
+    scriptureReferencePreviewRequest = fetch(`/assets/commentary/kjv-reference-previews.json?v=${COMMENTARY_REVISION}`)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Unable to load KJV reference previews (${response.status}).`);
+        return response.json();
+      })
+      .then((payload) => {
+        if (!payload?.references || !payload?.verses) throw new Error('Invalid KJV reference preview data.');
+        return payload;
+      })
+      .catch((error) => {
+        scriptureReferencePreviewRequest = null;
+        throw error;
+      });
+    return scriptureReferencePreviewRequest;
+  }
+
+  function scriptureReferencePreviewElement() {
+    let preview = document.querySelector('[data-scripture-reference-preview]');
+    if (preview || !document.body) return preview;
+    preview = document.createElement('aside');
+    preview.className = 'scripture-reference-preview';
+    preview.id = 'scripture-reference-preview';
+    preview.setAttribute('data-scripture-reference-preview', '');
+    preview.setAttribute('role', 'tooltip');
+    preview.setAttribute('aria-hidden', 'true');
+    preview.hidden = true;
+    document.body.appendChild(preview);
+    return preview;
+  }
+
+  function positionScriptureReferencePreview(preview, chip) {
+    const anchor = chip.getBoundingClientRect();
+    const gap = 10;
+    const edge = 16;
+    const width = preview.offsetWidth;
+    const height = preview.offsetHeight;
+    let left = anchor.left;
+    if (left + width > window.innerWidth - edge) left = anchor.right - width;
+    left = Math.max(edge, Math.min(left, window.innerWidth - width - edge));
+    let top = anchor.bottom + gap;
+    if (top + height > window.innerHeight - edge) top = anchor.top - height - gap;
+    top = Math.max(edge, Math.min(top, window.innerHeight - height - edge));
+    preview.style.left = `${Math.round(left)}px`;
+    preview.style.top = `${Math.round(top)}px`;
+  }
+
+  function hideScriptureReferencePreview() {
+    scriptureReferencePreviewToken += 1;
+    const preview = document.querySelector('[data-scripture-reference-preview]');
+    if (scriptureReferencePreviewChip?.getAttribute('aria-describedby') === preview?.id) {
+      scriptureReferencePreviewChip.removeAttribute('aria-describedby');
+    }
+    scriptureReferencePreviewChip = null;
+    if (!preview) return;
+    preview.dataset.visible = 'false';
+    preview.setAttribute('aria-hidden', 'true');
+    window.setTimeout(() => {
+      if (preview.dataset.visible !== 'true') preview.hidden = true;
+    }, 140);
+  }
+
+  async function showScriptureReferencePreview(chip) {
+    const reference = chip?.dataset?.scriptureReference;
+    const preview = scriptureReferencePreviewElement();
+    if (!reference || !preview) return;
+    const requestToken = ++scriptureReferencePreviewToken;
+    scriptureReferencePreviewChip = chip;
+
+    try {
+      const payload = await loadScriptureReferencePreviews();
+      if (requestToken !== scriptureReferencePreviewToken || scriptureReferencePreviewChip !== chip) return;
+      const entry = payload.references[reference];
+      if (!entry?.verses?.length) return;
+      const verseMarkup = entry.verses
+        .map((verseReference) => {
+          const verseText = payload.verses[verseReference];
+          if (!verseText) return '';
+          return '<p class="scripture-reference-preview-verse">' +
+            `<span class="scripture-reference-preview-verse-label">${commentaryEscape(verseReference)}</span>` +
+            `<span class="scripture-reference-preview-verse-copy">${commentaryEscape(verseText)}</span>` +
+            '</p>';
+        })
+        .join('');
+      if (!verseMarkup) return;
+
+      preview.innerHTML =
+        '<div class="scripture-reference-preview-heading">' +
+        `<span>${commentaryEscape(reference)}</span><span class="scripture-reference-preview-version">KJV</span>` +
+        '</div>' +
+        `<div class="scripture-reference-preview-verses">${verseMarkup}</div>` +
+        (entry.truncated ? '<p class="scripture-reference-preview-note">Opening three verses shown.</p>' : '');
+      preview.hidden = false;
+      preview.setAttribute('aria-hidden', 'false');
+      chip.setAttribute('aria-describedby', preview.id);
+      positionScriptureReferencePreview(preview, chip);
+      window.requestAnimationFrame(() => {
+        if (requestToken === scriptureReferencePreviewToken) preview.dataset.visible = 'true';
+      });
+    } catch (error) {
+      hideScriptureReferencePreview();
+    }
+  }
+
+  function ensureScriptureReferencePreview() {
+    if (!currentChapterNumber() || !document.body) {
+      hideScriptureReferencePreview();
+      document.querySelector('[data-scripture-reference-preview]')?.remove();
+      return;
+    }
+    scriptureReferencePreviewElement();
+    if (scriptureReferencePreviewBound) return;
+    scriptureReferencePreviewBound = true;
+
+    document.addEventListener('pointerover', (event) => {
+      if (event.pointerType && !['mouse', 'pen'].includes(event.pointerType)) return;
+      const chip = event.target.closest?.('[data-scripture-reference]');
+      if (!chip || chip.contains(event.relatedTarget)) return;
+      showScriptureReferencePreview(chip);
+    });
+    document.addEventListener('pointerout', (event) => {
+      const chip = event.target.closest?.('[data-scripture-reference]');
+      if (!chip || chip.contains(event.relatedTarget)) return;
+      hideScriptureReferencePreview();
+    });
+    document.addEventListener('focusin', (event) => {
+      const chip = event.target.closest?.('[data-scripture-reference]');
+      if (chip) showScriptureReferencePreview(chip);
+    });
+    document.addEventListener('focusout', (event) => {
+      const chip = event.target.closest?.('[data-scripture-reference]');
+      if (chip && !chip.contains(event.relatedTarget)) hideScriptureReferencePreview();
+    });
+    document.addEventListener('pointerdown', (event) => {
+      if (!event.target.closest?.('[data-scripture-reference]')) hideScriptureReferencePreview();
+    });
+    document.addEventListener('scroll', hideScriptureReferencePreview, true);
+    window.addEventListener('resize', hideScriptureReferencePreview, { passive: true });
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') hideScriptureReferencePreview();
+    });
+  }
+
+  function selectedVerseButton(chapter) {
+    const hash = window.location.hash || '';
+    const hashMatch = hash.match(/^#v-?(\d+)$/) || hash.match(new RegExp(`^#revelation-${chapter}-(\\d+)$`));
+    if (hashMatch) {
+      const hashButton = document.getElementById(`revelation-${chapter}-${Number(hashMatch[1])}`);
+      if (hashButton) return hashButton;
+    }
+    return document.querySelector(`.scripture-card-active[id^="revelation-${chapter}-"]`) ||
+      document.getElementById(`revelation-${chapter}-1`);
+  }
+
+  function setSelectedVerse(button) {
+    const pane = button.closest('.scripture-pane');
+    pane?.querySelectorAll('.scripture-card[id^="revelation-"]').forEach((candidate) => {
+      const active = candidate === button;
+      candidate.classList.toggle('scripture-card-active', active);
+      candidate.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  async function renderVerseCommentary(button, options = {}) {
+    const info = verseFromButton(button);
+    const shell = document.querySelector('aside.commentary-pane .commentary-shell');
+    if (!info || !shell) return false;
+    const chapter = Number(info.chapter);
+    const verse = Number(info.verse);
+    const requestToken = ++commentaryRenderToken;
+    shell.setAttribute('aria-busy', 'true');
+    shell.dataset.rvxCommentaryLoading = info.token;
+
+    try {
+      const bundle = await loadCommentaryBundle(chapter);
+      if (requestToken !== commentaryRenderToken || currentChapterNumber() !== chapter) return false;
+      const note = bundle.notes.find((candidate) => candidate.verse === verse);
+      if (!note) throw new Error(`Missing audited note for ${info.label}.`);
+
+      shell.innerHTML = commentaryArticleMarkup(note);
+      shell.setAttribute('aria-live', 'polite');
+      shell.removeAttribute('aria-busy');
+      shell.dataset.rvxCommentaryLoading = '';
+      setSelectedVerse(button);
+
+      if (options.updateLocation !== false) {
+        referenceAddRecent(chapter, verse);
+        const hash = `#v${verse}`;
+        if (window.location.hash !== hash) history.replaceState(null, '', hash);
+        const input = document.querySelector('[data-mbe-ref-input]');
+        if (input) input.value = `Revelation ${chapter}:${verse}`;
+        document.querySelector('.commentary-pane-body')?.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      if (isInlineNotesViewport()) openInlineNoteFor(button);
+      updateReaderFooterState();
+      return true;
+    } catch (error) {
+      shell.removeAttribute('aria-busy');
+      shell.dataset.rvxCommentaryLoading = '';
+      console.error(error);
+      return false;
+    }
+  }
+
+  function ensureVerseCommentary() {
+    const chapter = currentChapterNumber();
+    if (!chapter || !document.body) return;
+
+    if (!verseCommentaryBound) {
+      verseCommentaryBound = true;
+      document.addEventListener('click', (event) => {
+        const copyButton = event.target.closest?.('[data-revelation-copy]');
+        if (copyButton) {
+          const article = copyButton.closest('.exposition-card');
+          const text = article ? `${article.querySelector('h2')?.textContent || ''}\n\n${Array.from(article.querySelectorAll('.commentary-reading p')).map((node) => node.textContent).join('\n\n')}` : '';
+          if (text && navigator.clipboard?.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+              const label = copyButton.querySelector('span');
+              if (label) label.textContent = 'Copied';
+              window.setTimeout(() => { if (label) label.textContent = 'Copy'; }, 1400);
+            }).catch(() => {});
+          }
+          return;
+        }
+
+        const button = event.target.closest?.('.scripture-card[id^="revelation-"]');
+        if (!button) return;
+        renderVerseCommentary(button);
+      });
+    }
+
+    const button = selectedVerseButton(chapter);
+    const shell = document.querySelector('aside.commentary-pane .commentary-shell');
+    if (!button || !shell) return;
+    if (shell.querySelector(`[data-rvx-commentary="${button.id}"]`) || shell.dataset.rvxCommentaryLoading === button.id) return;
+    renderVerseCommentary(button, { updateLocation: false });
   }
 
   function ensureChapterSummary() {
@@ -1068,6 +1403,8 @@
     ensureChapterSummary();
     ensureChapterSummaryObserver();
     ensureDarkThemeObserver();
+    ensureVerseCommentary();
+    ensureScriptureReferencePreview();
     ensureInlineCommentaryNotes();
     document.body.classList.add('mbe-shell-managed');
     document.querySelectorAll('.mbe-global-shell').forEach((node, index) => {
