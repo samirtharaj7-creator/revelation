@@ -158,7 +158,7 @@
     }
     const description = document.querySelector('.home-showcase-description');
     if (description) {
-      description.textContent = 'Start with the introduction, continue through the chapters, then trace the prophecies and explore focused articles.';
+      description.textContent = 'Enter Revelation, where the risen Christ walks among His churches, the Lamb governs history, false worship is judged, and God’s faithful people inherit a world made new.';
     }
     const context = document.querySelector('.home-showcase-context');
     if (!context) return;
