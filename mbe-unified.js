@@ -271,9 +271,8 @@
       '<div class="study-card-section"><h3>Cross References</h3>' +
       (crossReferences ? `<div class="reference-chip-list">${crossReferences}</div>` : '<p class="study-card-empty">No verse-specific cross references added yet.</p>') +
       '</div>' +
-      '<div class="study-card-section"><h3>Symbols</h3>' +
-      (symbols ? `<div class="symbol-note-list">${symbols}</div>` : '<p class="study-card-empty">No verse-specific symbols added yet.</p>') +
-      '</div>' +
+      (symbols ? '<div class="study-card-section"><h3>Symbols</h3>' +
+        `<div class="symbol-note-list">${symbols}</div></div>` : '') +
       '<div class="study-card-section study-card-section-wide"><h3>Word / Phrase Notes</h3>' +
       (wordNotes ? `<div class="word-note-list">${wordNotes}</div>` : '<p class="study-card-empty">No verse-specific word notes added yet.</p>') +
       '</div></div></section>';
