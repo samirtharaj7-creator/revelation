@@ -883,6 +883,7 @@ html.dark .home-showcase {
 
 .background-page,
 html.dark .background-page {
+  overflow-x: clip !important;
   background:
     radial-gradient(1100px 420px at 50% -12%, rgba(201, 164, 76, .10), transparent 62%),
     linear-gradient(180deg, #0d1c33 0%, #0b1f3a 48%, #081521 100%) !important;

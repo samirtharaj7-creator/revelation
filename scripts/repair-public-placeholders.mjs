@@ -45,6 +45,14 @@ for (const file of ["timeline/seven-plagues/index.html", "timeline/seven-plagues
   ]);
 }
 
+update("timeline/seven-churches/index.html", [
+  ['<h2 id="seven-churches-title"', '<h1 id="seven-churches-title"'],
+  [
+    '</h2><p class="mt-3 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">Explore Revelation 2 and 3',
+    '</h1><p class="mt-3 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">Explore Revelation 2 and 3'
+  ]
+]);
+
 update("revelation/1/index.html", [[
   '<div class="study-card-section"><h3>Symbols</h3><p class="study-card-empty">No verse-specific symbols added yet.</p></div>',
   ""
