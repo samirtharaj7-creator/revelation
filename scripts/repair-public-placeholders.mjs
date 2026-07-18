@@ -53,6 +53,14 @@ update("timeline/seven-churches/index.html", [
   ]
 ]);
 
+update("timeline/seven-seals/index.html", [
+  ['<h2 id="seven-seals-title"', '<h1 id="seven-seals-title"'],
+  [
+    ">The Seven Seals of Revelation</h2>",
+    ">The Seven Seals of Revelation</h1>"
+  ]
+]);
+
 update("revelation/1/index.html", [[
   '<div class="study-card-section"><h3>Symbols</h3><p class="study-card-empty">No verse-specific symbols added yet.</p></div>',
   ""
