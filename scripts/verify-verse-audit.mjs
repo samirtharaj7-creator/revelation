@@ -3,6 +3,7 @@ import { join } from 'node:path';
 
 const root = process.cwd();
 const revision = 'rvx-93';
+const assetRevision = 'rvx-94';
 const expectedChapters = 22;
 const expectedVerses = 404;
 const elderReferences = new Set([
@@ -36,7 +37,8 @@ for (let chapter = 1; chapter <= expectedChapters; chapter += 1) {
 
   const pagePath = join(root, 'revelation', String(chapter), 'index.html');
   const page = readFileSync(pagePath, 'utf8');
-  assert(page.includes(`/mbe-unified.js?v=${revision}`), `Chapter ${chapter} has a stale script token.`);
+  assert(page.includes(`/mbe-unified.js?v=${assetRevision}`), `Chapter ${chapter} has a stale script token.`);
+  assert(page.includes(`/revelation-site.css?v=${assetRevision}`), `Chapter ${chapter} has a stale stylesheet token.`);
 
   const verseIds = [...page.matchAll(new RegExp(`id="revelation-${chapter}-(\\d+)"`, 'g'))]
     .map((match) => Number(match[1]));
@@ -84,10 +86,19 @@ for (let chapter = 1; chapter <= expectedChapters; chapter += 1) {
 }
 
 const readerScript = readFileSync(join(root, 'mbe-unified.js'), 'utf8');
+const sourceCss = readFileSync(join(root, 'revelation-illustrated.css'), 'utf8');
+const siteCss = readFileSync(join(root, 'revelation-site.css'), 'utf8');
 const previewData = JSON.parse(
   readFileSync(join(root, 'assets', 'commentary', 'kjv-reference-previews.json'), 'utf8'),
 );
 assert(readerScript.includes(`const COMMENTARY_REVISION = '${revision}'`), 'Reader commentary revision is stale.');
+assert(readerScript.includes(`/revelation-site.css?v=${assetRevision}`), 'Reader stylesheet revision is stale.');
+for (const [name, css] of [['source', sourceCss], ['built', siteCss]]) {
+  assert(
+    /@media \(max-width: 560px\)[\s\S]*?\.article-document-header h1\s*\{[\s\S]*?overflow-wrap: anywhere !important;/.test(css),
+    `The ${name} stylesheet is missing the mobile article-heading overflow safeguard.`,
+  );
+}
 assert(readerScript.includes('/assets/commentary/revelation-${chapter}.json'), 'Reader is not wired to the audited chapter bundles.');
 assert(readerScript.includes('/assets/commentary/kjv-reference-previews.json'), 'Reader is not wired to KJV reference previews.');
 assert(previewData.revision === revision, `KJV reference previews have stale revision ${previewData.revision}.`);

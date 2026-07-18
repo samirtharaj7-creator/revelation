@@ -2,7 +2,7 @@ import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const root = process.cwd();
-const cacheToken = 'rvx-93';
+const cacheToken = 'rvx-94';
 
 const summaries = {
   1: "Revelation 1 opens with Christ's unveiling to the churches. John sees the risen Son of Man among the seven lampstands.",

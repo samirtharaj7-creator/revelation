@@ -888,6 +888,12 @@ html.dark .background-page {
   font-family: var(--mbe-font-ui) !important;
 }
 
+@media (max-width: 560px) {
+  .article-document-header h1 {
+    overflow-wrap: anywhere !important;
+  }
+}
+
 .reader-page,
 html.dark .reader-page,
 main.bg-background,
