@@ -473,20 +473,37 @@
     });
   }
 
+  function cssAttrEscape(value) {
+    if (window.CSS?.escape) return window.CSS.escape(String(value));
+    return String(value).replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+  }
+
+  function verseToken(chapter, verse) {
+    return `revelation-${chapter}-${verse}`;
+  }
+
+  function findVerseButtonByToken(token) {
+    return document.querySelector(`[data-verse-id="${cssAttrEscape(token)}"]`) || document.getElementById(token);
+  }
+
+  function buttonVerseToken(button) {
+    return button?.dataset?.verseId || button?.id || '';
+  }
+
   function selectedVerseButton(chapter) {
     const hash = window.location.hash || '';
-    const hashMatch = hash.match(/^#v-?(\d+)$/) || hash.match(new RegExp(`^#revelation-${chapter}-(\\d+)$`));
+    const hashMatch = hash.match(/^#v-?(\d+)$/) || hash.match(new RegExp(`^#revelation-${chapter}-(\d+)$`));
     if (hashMatch) {
-      const hashButton = document.getElementById(`revelation-${chapter}-${Number(hashMatch[1])}`);
+      const hashButton = findVerseButtonByToken(verseToken(chapter, Number(hashMatch[1])));
       if (hashButton) return hashButton;
     }
-    return document.querySelector(`.scripture-card-active[id^="revelation-${chapter}-"]`) ||
-      document.getElementById(`revelation-${chapter}-1`);
+    return document.querySelector(`.scripture-card-active[data-verse-id^="revelation-${chapter}-"], .scripture-card-active[id^="revelation-${chapter}-"]`) ||
+      findVerseButtonByToken(verseToken(chapter, 1));
   }
 
   function setSelectedVerse(button) {
     const pane = button.closest('.scripture-pane');
-    pane?.querySelectorAll('.scripture-card[id^="revelation-"]').forEach((candidate) => {
+    pane?.querySelectorAll('.scripture-card[data-verse-id^="revelation-"], .scripture-card[id^="revelation-"]').forEach((candidate) => {
       const active = candidate === button;
       candidate.classList.toggle('scripture-card-active', active);
       candidate.setAttribute('aria-pressed', active ? 'true' : 'false');
@@ -549,7 +566,7 @@
     if (!verseCommentaryBound) {
       verseCommentaryBound = true;
       document.addEventListener('click', (event) => {
-        const button = event.target.closest?.('.scripture-card[id^="revelation-"]');
+        const button = event.target.closest?.('.scripture-card[data-verse-id^="revelation-"], .scripture-card[id^="revelation-"]');
         if (!button) return;
         if (isInlineNotesViewport()) {
           if (button.nextElementSibling?.matches?.('[data-revelation-inline-note]')) {
@@ -558,7 +575,7 @@
           }
 
           const shell = document.querySelector('aside.commentary-pane .commentary-shell');
-          if (shell?.querySelector(`[data-rvx-commentary="${button.id}"]`)) {
+          if (shell?.querySelector(`[data-rvx-commentary="${buttonVerseToken(button)}"]`)) {
             setSelectedVerse(button);
             openInlineNoteFor(button);
             updateReaderFooterState();
@@ -573,7 +590,8 @@
     const button = selectedVerseButton(chapter);
     const shell = document.querySelector('aside.commentary-pane .commentary-shell');
     if (!button || !shell) return;
-    if (shell.querySelector(`[data-rvx-commentary="${button.id}"]`) || shell.dataset.rvxCommentaryLoading === button.id) return;
+    const token = buttonVerseToken(button);
+    if (shell.querySelector(`[data-rvx-commentary="${token}"]`) || shell.dataset.rvxCommentaryLoading === token) return;
     renderVerseCommentary(button, { updateLocation: false });
   }
 
@@ -610,14 +628,15 @@
 
   function removeInlineNotes() {
     document.querySelectorAll(INLINE_NOTE_SELECTOR).forEach((node) => node.remove());
-    document.querySelectorAll('.scripture-card[id^="revelation-"][aria-expanded="true"]').forEach((node) => {
+    document.querySelectorAll('.scripture-card[data-verse-id^="revelation-"][aria-expanded="true"], .scripture-card[id^="revelation-"][aria-expanded="true"]').forEach((node) => {
       node.setAttribute('aria-expanded', 'false');
     });
   }
 
   function verseFromButton(button) {
-    if (!button || !button.id) return null;
-    const match = button.id.match(/^revelation-(\d+)-(\d+)$/);
+    const token = buttonVerseToken(button);
+    if (!token) return null;
+    const match = token.match(/^revelation-(\d+)-(\d+)$/);
     if (!match) return null;
     return {
       chapter: match[1],
@@ -1068,7 +1087,7 @@
 
   function referenceVerseButton(chapter, verse) {
     const id = referenceNavConfig.simpleVerseIds ? 'v-' + verse : referenceNavConfig.slug + '-' + chapter + '-' + verse;
-    return document.getElementById(id);
+    return document.querySelector(`[data-verse-id="${cssAttrEscape(id)}"]`) || document.getElementById(id);
   }
 
   function referenceValid(chapter, verse) {
@@ -1094,7 +1113,6 @@
       const targetTop = paneBody.scrollTop + buttonRect.top - paneRect.top - Math.max(24, (paneBody.clientHeight - buttonRect.height) / 2);
       paneBody.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
       referencePinDesktopReader();
-      window.setTimeout(referencePinDesktopReader, 160);
       return;
     }
     button.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -1103,8 +1121,8 @@
   function referenceSelectedVerse(chapter) {
     const hashMatch = (window.location.hash || '').match(/^#v-?(\d+)$/);
     if (hashMatch && referenceValid(chapter, Number(hashMatch[1]))) return Number(hashMatch[1]);
-    const active = document.querySelector('.scripture-card-active[id], main[data-bible-panel] button[id^="v-"].bg-primary, main[data-bible-panel] button[id^="v-"][aria-pressed="true"]');
-    const idMatch = active?.id?.match(/(\d+)$/);
+    const active = document.querySelector('.scripture-card-active[data-verse-id], .scripture-card-active[id], main[data-bible-panel] button[id^="v-"].bg-primary, main[data-bible-panel] button[id^="v-"][aria-pressed="true"]');
+    const idMatch = buttonVerseToken(active).match(/(\d+)$/);
     if (idMatch && referenceValid(chapter, Number(idMatch[1]))) return Number(idMatch[1]);
     return 1;
   }
@@ -1176,16 +1194,12 @@
         const freshButton = referenceVerseButton(chapter, verse);
         if (freshButton) referenceScrollVerse(freshButton);
       }, 80);
-      window.setTimeout(() => {
-        const freshButton = referenceVerseButton(chapter, verse);
-        if (freshButton) referenceScrollVerse(freshButton);
-      }, 220);
     }
     const hash = '#v' + verse;
     if (window.location.hash !== hash) history.replaceState(null, '', hash);
     const input = document.querySelector('[data-mbe-ref-input]');
     if (input) input.value = referenceFormat(chapter, verse);
-    window.setTimeout(referencePinDesktopReader, 40);
+    referencePinDesktopReader();
   }
 
   function referenceFindStrip() {
@@ -1418,8 +1432,7 @@
     referenceAddRecent(currentChapter, currentVerse);
     referencePinDesktopReader();
     if ((window.location.hash || '').match(/^#v-?\d+$/)) {
-      window.setTimeout(() => referenceSelect(currentChapter, referenceSelectedVerse(currentChapter)), 120);
-      window.setTimeout(referencePinDesktopReader, 240);
+      referenceSelect(currentChapter, referenceSelectedVerse(currentChapter));
     }
   }
   // MBE reference navigator end
