@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 const root = process.cwd();
 const revision = 'rvx-93';
-const assetRevision = 'rvx-94';
+const assetRevision = 'rvx-99';
 const expectedChapters = 22;
 const expectedVerses = 404;
 const elderReferences = new Set([

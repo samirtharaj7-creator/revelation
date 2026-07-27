@@ -116,7 +116,7 @@
 
   function ensureIllustratedAssets() {
     if (!document.head) return;
-    const href = '/revelation-site.css?v=rvx-94';
+    const href = '/revelation-site.css?v=rvx-99';
     let link = document.querySelector('link[data-rvx="css"]');
     if (!link) {
       link = document.createElement('link');

@@ -1069,6 +1069,18 @@ html.dark .bg-background {
   line-height: 1.4 !important;
 }
 
+.reader-page .scripture-list::after {
+  display: block !important;
+  height: var(--mbe-scripture-bottom-cushion, 2.5rem) !important;
+  content: "" !important;
+}
+
+.reader-page .commentary-shell::after {
+  display: block !important;
+  height: var(--mbe-study-notes-bottom-cushion, 2.5rem) !important;
+  content: "" !important;
+}
+
 .scripture-pane-header + .scripture-list {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -1437,7 +1449,7 @@ html.dark .bg-background {
   }
 
   body.mbe-reader-footer-visible .mbe-reader-footer {
-    max-height: 5.75rem !important;
+    max-height: 6.5rem !important;
     border-top-width: 1px !important;
     border-top-color: rgba(201, 164, 76, .18) !important;
     border-bottom-width: 1px !important;
@@ -1450,13 +1462,13 @@ html.dark .bg-background {
 
   .mbe-reader-footer-inner {
     display: grid !important;
-    grid-template-columns: minmax(8rem, auto) minmax(10rem, 1fr) minmax(14rem, auto) auto !important;
+    grid-template-columns: auto minmax(10rem, 1fr) minmax(0, 1.35fr) auto !important;
     align-items: center !important;
-    gap: .75rem 1.25rem !important;
-    width: min(100%, 92rem) !important;
-    min-height: 5.75rem !important;
+    gap: .55rem 1rem !important;
+    width: min(calc(100% - 2rem), 92rem) !important;
+    min-height: 6.5rem !important;
     margin: 0 auto !important;
-    padding: .875rem 2rem !important;
+    padding: .75rem 1rem !important;
   }
 
   .mbe-reader-footer-brand {
@@ -1475,11 +1487,25 @@ html.dark .bg-background {
   .mbe-reader-footer-tagline,
   .mbe-reader-footer-contact,
   .mbe-reader-footer-copy {
+    min-width: 0 !important;
     color: #b9ad90 !important;
     font-family: var(--mbe-font-ui) !important;
     font-size: .875rem !important;
     font-weight: 500 !important;
     line-height: 1.5rem !important;
+  }
+
+  .mbe-reader-footer-contact {
+    justify-self: end !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    text-align: right !important;
+    white-space: normal !important;
+  }
+
+  .mbe-reader-footer-inner > .mbe-reader-footer-link {
+    justify-self: end !important;
+    white-space: nowrap !important;
   }
 
   .mbe-reader-footer-link {
@@ -1501,6 +1527,7 @@ html.dark .bg-background {
   .mbe-reader-footer-copy {
     grid-column: 1 / -1 !important;
     font-size: .75rem !important;
+    line-height: 1rem !important;
   }
 }
 
@@ -1581,10 +1608,15 @@ html.dark .bg-background {
 @media (min-width: 1024px) {
   body.mbe-reader-shell-active {
     --mbe-reader-footer-space: 0rem;
+    --mbe-scripture-bottom-cushion: 3rem;
+    --mbe-study-notes-bottom-cushion: 3rem;
   }
 
   body.mbe-reader-shell-active.mbe-reader-footer-visible {
-    --mbe-reader-footer-space: 5.75rem;
+    --mbe-reader-footer-space: 6.5rem;
+    --mbe-reader-footer-cushion: 2.5rem;
+    --mbe-scripture-bottom-cushion: 7rem;
+    --mbe-study-notes-bottom-cushion: 7rem;
   }
 
   html.mbe-reader-shell-active,
@@ -1620,7 +1652,14 @@ html.dark .bg-background {
 
   .scripture-pane-body {
     padding-right: 2.5rem !important;
+    padding-bottom: calc(2.5rem + var(--mbe-reader-footer-cushion, 0rem)) !important;
     padding-left: 2.5rem !important;
+    scroll-padding-bottom: calc(2.5rem + var(--mbe-reader-footer-cushion, 0rem)) !important;
+  }
+
+  .commentary-pane-body {
+    padding-bottom: calc(2.5rem + var(--mbe-reader-footer-cushion, 0rem)) !important;
+    scroll-padding-bottom: calc(2.5rem + var(--mbe-reader-footer-cushion, 0rem)) !important;
   }
 }
 
