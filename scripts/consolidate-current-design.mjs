@@ -36,7 +36,7 @@ const output = [
   foundationEnd,
   '',
   '/* CURRENT GLOBAL SHELL */',
-  read('global-shell.css'),
+  read('global-shell.css?v=mbe-20260911-1'),
   '',
   '/* CURRENT REVELATION DESIGN */',
   read('revelation-illustrated.css'),
